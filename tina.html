@@ -6,6 +6,9 @@
   <title>Portofolio Tina Dian Hartanti</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tambahkan Font Awesome untuk ikon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
   <style>
     body {
       background: linear-gradient(to bottom, #fff9fb, #fefcff);
@@ -55,16 +58,19 @@
       margin-bottom: 20px;
     }
 
+    /* Social Links */
     .social-links a {
       color: #ff6f91;
       text-decoration: none;
       font-weight: 500;
-      margin: 0 5px;
+      margin: 0 10px;
+      font-size: 1.1rem;
+      transition: 0.3s;
     }
 
     .social-links a:hover {
       color: #00bcd4;
-      text-decoration: underline;
+      transform: scale(1.1);
     }
 
     .btn-profile {
@@ -83,33 +89,20 @@
       background: linear-gradient(90deg, #ffb6c1, #a0e7e5);
     }
 
-    /* Section Titles */
     section h2 {
       font-family: 'Pacifico', cursive;
       color: #ff6f91;
       margin-bottom: 15px;
     }
 
-    /* Sections */
     .about, .experience, .skills, .contact {
       padding: 80px 0;
     }
 
-    .about {
-      background: linear-gradient(to bottom, #fff6fa, #fff9ff);
-    }
-
-    .experience {
-      background: linear-gradient(to bottom, #e3faff, #f5fdff);
-    }
-
-    .skills {
-      background: linear-gradient(to bottom, #fff9f3, #fffaf7);
-    }
-
-    .contact {
-      background: linear-gradient(to bottom, #e0f7fa, #f0ffff);
-    }
+    .about { background: linear-gradient(to bottom, #fff6fa, #fff9ff); }
+    .experience { background: linear-gradient(to bottom, #e3faff, #f5fdff); }
+    .skills { background: linear-gradient(to bottom, #fff9f3, #fffaf7); }
+    .contact { background: linear-gradient(to bottom, #e0f7fa, #f0ffff); }
 
     footer {
       background: linear-gradient(90deg, #ffeaf2, #e3f5ff);
@@ -170,23 +163,33 @@
   <div class="container" data-animate>
     <img src="images/tina.jpg" alt="Tina Dian Hartanti" class="rounded-circle mb-3" width="160">
     <h1>Hai, Aku Tina Dian Hartanti 🌷</h1>
-    <p class="lead">Saya adalah mahasiswa sistem informasi angkatan 2023. saya berkuliah di universitas musamus merauke✨</p>
-    <div class="social-links">
-      <a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">GitHub</a>
+    <p class="lead">Saya adalah mahasiswa sistem informasi angkatan 2023. Saya berkuliah di Universitas Musamus Merauke ✨</p>
+    
+    <!-- Social Media Links -->
+    <div class="social-links mt-3">
+      <a href="https://www.instagram.com/username_kamu" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.linkedin.com/in/username_kamu" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/username_kamu" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> GitHub
+      </a>
     </div>
-    <div class="mt-3">
-      <button class="btn btn-profile">Lihat Profil</button>
+
+    <div class="mt-4">
+      <a href="#about" class="btn btn-profile">Lihat Profil</a>
     </div>
   </div>
 </section>
 
 <!-- Tentang Saya -->
-<section class="about text-center">
+<section class="about text-center" id="about">
   <div class="container" data-animate>
     <h2>Tentang Saya</h2>
-    <p class="mt-3">Aku <b>Tina Dian Hartanti</b>, saya anak dari bapak saya bernama SUTRISNO dan ibunda saya bermana KISWANTI. mereka adalah alasan saya untuk sukses
-       dan menyelesaikan pendidikan saya di jurusan sistem informasi
-      .</p>
+    <p class="mt-3">Aku <b>Tina Dian Hartanti</b>, anak dari Bapak <b>Sutrisno</b> dan Ibu <b>Kiswanti</b>. Mereka adalah alasan saya untuk sukses
+      dan menyelesaikan pendidikan saya di jurusan Sistem Informasi.</p>
     <img src="images/tinab.jpg" alt="Tentang Tina" class="rounded mt-3" width="240">
   </div>
 </section>
@@ -196,19 +199,15 @@
   <div class="container" data-animate>
     <h2>Pengalaman</h2>
     <ul class="list-unstyled mt-3">
-      <li>saya pernah menjadi pemateri jarkom</li>
-      <li>saya pernah menjadi warga persaudaraan setia hati terate</li>
-      <li>saya pernah mengikuti lomba senam pramuka dan memnangkan juara 1 tingkat distrik</li>
-      <li>saya saat ini sedang menjabat menjai kor pendidikan di hmj </li>
-      <li>saya pernah menjadi penangung jawab di kegiatan pkkmb jurusan</li>
-      
+      <li>Saya pernah menjadi pemateri Jarkom</li>
+      <li>Saya anggota Persaudaraan Setia Hati Terate</li>
+      <li>Juara 1 lomba senam pramuka tingkat distrik</li>
+      <li>Saat ini menjabat sebagai Koordinator Pendidikan di HMJ</li>
+      <li>Pernah menjadi penanggung jawab kegiatan PKKMB jurusan</li>
     </ul>
-    <img src="images/exp_tina.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/exp_tina1.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/exp_tina2.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/exp_tina3.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/exp_tina4.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/exp_tina5.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <img src="images/exp_tina.jpg" class="rounded mt-3" width="260">
+    <img src="images/exp_tina1.jpg" class="rounded mt-3" width="260">
+    <img src="images/exp_tina2.jpg" class="rounded mt-3" width="260">
   </div>
 </section>
 
@@ -216,10 +215,9 @@
 <section class="skills text-center">
   <div class="container" data-animate>
     <h2>Skill</h2>
-    <p class="mt-3">saya memiliki skill yang tidak banyak. tetapi saya mendapatkan skill ini karena 
-      perjuangan saya yaiyu skill di dunia pencak silat dan public speaking 🌼</p>
-    <img src="images/skill_tina1.jpg" alt="Skill" class="rounded mt-3" width="260">
-    <img src="images/skill_tina2.jpg" alt="Skill" class="rounded mt-3" width="260">
+    <p class="mt-3">Saya memiliki beberapa skill hasil perjuangan dan latihan, yaitu di bidang <b>pencak silat</b> dan <b>public speaking</b> 🌼</p>
+    <img src="images/skill_tina1.jpg" class="rounded mt-3" width="260">
+    <img src="images/skill_tina2.jpg" class="rounded mt-3" width="260">
   </div>
 </section>
 
@@ -243,7 +241,7 @@
 <!-- Footer -->
 <footer>
   <div class="container" data-animate>
-    <p>&copy; 2025 Portofolio Tina Dian Hartanti 💕 </p>
+    <p>&copy; 2025 Portofolio Tina Dian Hartanti 💕</p>
   </div>
 </footer>
 
