@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Tina Dian Hartanti</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fff9fb, #fefcff);
+      color: #444;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #ffeaf2, #e3f5ff);
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar-brand strong {
+      color: #ff80ab;
+      font-weight: 700;
+    }
+
+    .nav-link {
+      color: #555 !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #ff4081 !important;
+      text-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(180deg, #fff5f8, #eafaff);
+      padding: 110px 0 100px;
+    }
+
+    .hero h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.8rem;
+      background: linear-gradient(90deg, #ff7eb3, #ffb6c1, #ffcce7, #a0e7e5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    .hero .lead {
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      color: #ff6f91;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 5px;
+    }
+
+    .social-links a:hover {
+      color: #00bcd4;
+      text-decoration: underline;
+    }
+
+    .btn-profile {
+      background: linear-gradient(90deg, #a0e7e5, #ffb6c1);
+      border: none;
+      border-radius: 50px;
+      padding: 10px 25px;
+      font-weight: 600;
+      color: #333;
+      box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+      transition: 0.3s;
+    }
+
+    .btn-profile:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(90deg, #ffb6c1, #a0e7e5);
+    }
+
+    /* Section Titles */
+    section h2 {
+      font-family: 'Pacifico', cursive;
+      color: #ff6f91;
+      margin-bottom: 15px;
+    }
+
+    /* Sections */
+    .about, .experience, .skills, .contact {
+      padding: 80px 0;
+    }
+
+    .about {
+      background: linear-gradient(to bottom, #fff6fa, #fff9ff);
+    }
+
+    .experience {
+      background: linear-gradient(to bottom, #e3faff, #f5fdff);
+    }
+
+    .skills {
+      background: linear-gradient(to bottom, #fff9f3, #fffaf7);
+    }
+
+    .contact {
+      background: linear-gradient(to bottom, #e0f7fa, #f0ffff);
+    }
+
+    footer {
+      background: linear-gradient(90deg, #ffeaf2, #e3f5ff);
+      color: #555;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    img.rounded, .rounded-circle {
+      border: 3px solid #ffd6e8;
+      box-shadow: 0 5px 15px rgba(255, 182, 193, 0.35);
+    }
+
+    iframe {
+      border: none;
+      border-radius: 12px;
+      width: 100%;
+      height: 320px;
+      box-shadow: 0 3px 10px rgba(255, 182, 193, 0.4);
+    }
+
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: all 0.6s ease;
+    }
+
+    [data-animate].visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.jpg" width="40" class="me-2" alt="Logo">
+      <strong>Portfolio</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="nav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="tina.html">Tina</a></li>
+        <li class="nav-item"><a class="nav-link" href="mey.html">Mey</a></li>
+        <li class="nav-item"><a class="nav-link" href="alda.html">Alda</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero text-center">
+  <div class="container" data-animate>
+    <img src="images/tina.jpg" alt="Tina Dian Hartanti" class="rounded-circle mb-3" width="160">
+    <h1>Hai, Aku Tina Dian Hartanti 🌷</h1>
+    <p class="lead">Desainer kreatif dan web developer yang mencintai warna lembut, gaya estetik, dan sentuhan ceria ✨</p>
+    <div class="social-links">
+      <a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">GitHub</a>
+    </div>
+    <div class="mt-3">
+      <button class="btn btn-profile">Lihat Profil</button>
+    </div>
+  </div>
+</section>
+
+<!-- Tentang Saya -->
+<section class="about text-center">
+  <div class="container" data-animate>
+    <h2>Tentang Saya</h2>
+    <p class="mt-3">Aku <b>Tina Dian Hartanti</b>, pecinta seni visual, teknologi, dan desain web pastel 🌸.  
+      Aku suka membuat tampilan yang lembut, ceria, dan menyenangkan 💕.</p>
+    <img src="images/tinab.jpg" alt="Tentang Tina" class="rounded mt-3" width="240">
+  </div>
+</section>
+
+<!-- Pengalaman -->
+<section class="experience text-center">
+  <div class="container" data-animate>
+    <h2>Pengalaman</h2>
+    <ul class="list-unstyled mt-3">
+      <li>UI Designer di Lovely Pixel Studio</li>
+      <li>Frontend Developer Freelance</li>
+      <li>Kontributor Komunitas Desain Digital</li>
+    </ul>
+    <img src="images/exp_tina.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <img src="images/exp_tina1.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <img src="images/exp_tina2.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <img src="images/exp_tina3.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <img src="images/exp_tina4.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <img src="images/exp_tina5.jpg" alt="Experience" class="rounded mt-3" width="260">
+  </div>
+</section>
+
+<!-- Skill -->
+<section class="skills text-center">
+  <div class="container" data-animate>
+    <h2>Skill</h2>
+    <p class="mt-3">HTML, CSS, JavaScript, Bootstrap, Figma, Canva, UI/UX Design 🌼</p>
+    <img src="images/skill_tina1.jpg" alt="Skill" class="rounded mt-3" width="260">
+    <img src="images/skill_tina2.jpg" alt="Skill" class="rounded mt-3" width="260">
+  </div>
+</section>
+
+<!-- Kontak -->
+<section class="contact text-center">
+  <div class="container" data-animate>
+    <h2>Kontak Saya</h2>
+    <p>Email: tina@example.com</p>
+    <p>Telepon: 0812-3456-7890</p>
+    <div class="mt-4">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2375461072967!2d140.39284187473797!3d-8.493735487290458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x688d23e1e18f07df%3A0xf0b6a1e2de7b5a86!2sUniversitas%20Musamus!5e0!3m2!1sid!2sid!4v1730586022006!5m2!1sid!2sid"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container" data-animate>
+    <p>&copy; 2025 Portofolio Tina Dian Hartanti — Dibuat dengan 💕 & Bootstrap</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const elements = document.querySelectorAll('[data-animate]');
+  function animateOnScroll() {
+    elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) el.classList.add('visible');
+    });
+  }
+  window.addEventListener('scroll', animateOnScroll);
+  animateOnScroll();
+</script>
+</body>
+</html>
