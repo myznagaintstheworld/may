@@ -14,19 +14,19 @@
       --radius:14px;
       --maxw:1100px;
       --gap:24px;
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
     }
     *{box-sizing:border-box}
     body{
       margin:0;
-      background: linear-gradient(180deg,#fff5f6 0%, #fff 70%);
+      background:linear-gradient(180deg,#fff5f6 0%,#fff 70%);
       color:#222;
       line-height:1.5;
     }
     .container{
-      max-width: var(--maxw);
+      max-width:var(--maxw);
       margin:0 auto;
-      padding: 28px;
+      padding:28px;
     }
 
     /* NAVBAR */
@@ -54,33 +54,23 @@
       font-size:20px;
     }
     .brand img{width:40px;height:40px;border-radius:50%}
+    .people{display:flex;align-items:center;gap:16px;font-weight:700;}
+    .people a{text-decoration:none;color:#222;}
+    .people a.active{color:purple;}
 
-    .people{
-      display:flex;
-      align-items:center;
-      gap:16px;
-      font-weight:700;
-    }
-    .people a{
-      text-decoration:none;
-      color:#222;
-    }
-    .people a.active{
-      color:purple;
-    }
-
-    /* Burger Menu */
+    /* Burger */
     .burger{
       display:none;
-      font-size:26px;
+      font-size:28px;
       cursor:pointer;
+      color:var(--red-strong);
     }
 
     /* HERO */
     .hero{
       padding:64px 24px 48px;
       text-align:center;
-      background:linear-gradient(180deg, rgba(230,59,71,0.06), rgba(255,255,255,0));
+      background:linear-gradient(180deg,rgba(230,59,71,0.06),rgba(255,255,255,0));
     }
     .hero-inner{max-width:880px;margin:0 auto;}
     .hero .avatar{
@@ -89,9 +79,7 @@
     .hero h1{font-size:48px;margin:8px 0 12px;}
     .hero p.lead{color:var(--muted);font-size:18px;margin:0 0 20px}
     .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
-    .btn{
-      padding:12px 22px;border-radius:12px;font-weight:700;border:2px solid transparent;cursor:pointer;text-decoration:none;
-    }
+    .btn{padding:12px 22px;border-radius:12px;font-weight:700;border:2px solid transparent;cursor:pointer;text-decoration:none;}
     .btn-primary{background:var(--red);color:white;}
     .btn-outline{background:transparent;color:var(--red);border-color:var(--red);}
     .socials{display:flex;gap:18px;justify-content:center;margin-top:8px}
@@ -115,7 +103,7 @@
     .exp-item p{margin:6px 0 10px;color:var(--muted);font-size:14px}
     .exp-images{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
       gap:10px;
       margin-top:10px;
     }
@@ -123,34 +111,20 @@
       width:100%;
       border-radius:10px;
       object-fit:cover;
+      height:140px;
     }
 
     /* Skills */
-    .skills-list{list-style:disc;padding-left:22px;color:var(--muted)}
-    .skills-list li{margin-bottom:6px}
+    .skills-list{color:var(--muted);line-height:1.7}
 
     /* Contact */
-    #contact{
-      text-align:center;
-      background:#fff5f6;
-      padding:40px 18px;
-    }
-    #contact a{
-      color:var(--red);
-      font-weight:600;
-      text-decoration:none;
-    }
+    #contact{text-align:center;background:#fff5f6;padding:40px 18px;}
+    #contact a{color:var(--red);font-weight:600;text-decoration:none;}
 
     /* Footer */
-    footer{
-      padding:24px;
-      background:#fafafa;
-      text-align:center;
-      color:#777;
-      font-size:14px;
-    }
+    footer{padding:24px;background:#fafafa;text-align:center;color:#777;font-size:14px;}
 
-    /* RESPONSIVE */
+    /* Responsive */
     @media (max-width:900px){
       .people{display:none;}
       .burger{display:block;}
@@ -256,24 +230,22 @@
 
   <section id="skills">
     <h2 class="section-title">Skill</h2>
-    <ul class="skills-list">
-      <li>Multitasking</li>
-      <li>Pendiam</li>
-      <li>A good listener</li>
-      <li>Menghafal lagu cepat</li>
-      <li>Bisa memasak</li>
-    </ul>
+    <p class="skills-list">
+      Skill: kebanyakan skill saya itu berupa softskill yaitu:<br><br>
+      1. <b>Multitasking</b> — saya bisa membaca sambil mendengarkan lagu atau menyimak podcast.<br>
+      2. <b>Pendiam</b> — saya bisa diam tanpa diminta a.k.a tidak suka keributan.<br>
+      3. <b>A good listener</b> — bukan hanya mendengar lewat telinga tapi juga mencerna di otak dan hati, anjay!<br>
+      4. Saya juga bisa menghafal lagu dengan cepat.<br>
+      5. Saya juga bisa masak, ofc!
+    </p>
   </section>
 </main>
 
-<!-- Kontak Pindah ke Bawah -->
 <section id="contact">
   <h2 class="section-title">Kontak</h2>
   <p>Email: <a href="mailto:meyrisna516@gmail.com">meyrisna516@gmail.com</a></p>
   <p>Lokasi: Merauke, Indonesia</p>
   <p><a class="btn btn-primary" href="mailto:meyrisna516@gmail.com">Kirim Email</a></p>
-
-  <!-- Peta Google -->
   <div style="margin-top:20px;">
     <iframe src="https://www.google.com/maps?q=Merauke%2C%20Indonesia&output=embed" width="100%" height="250" style="border:0;border-radius:12px;"></iframe>
   </div>
@@ -284,7 +256,6 @@
 </footer>
 
 <script>
-  // Toggle menu burger
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
   burger.addEventListener('click', () => {
