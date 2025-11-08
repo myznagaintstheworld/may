@@ -130,3 +130,37 @@ footer{
   .people{display:none;}
   .burger{display:block;}
 }
+
+/* --- Tentang Saya Section --- */
+#about p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.edu-card {
+  background: #fff7f4;
+  border-left: 5px solid var(--accent);
+  padding: 14px 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.edu-card h3 {
+  color: var(--primary);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.edu-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.edu-card li {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
