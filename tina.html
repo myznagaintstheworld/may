@@ -5,313 +5,193 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portofolio Tina Dian Hartanti</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <style>
     body {
-      background: linear-gradient(to bottom, #fff9fb, #fefcff);
-      color: #444;
       font-family: "Poppins", sans-serif;
+      background: #fdfdfd;
+      color: #333;
       scroll-behavior: smooth;
     }
 
     /* Navbar */
     .navbar {
-      background: linear-gradient(90deg, #ffeaf2, #e3f5ff);
+      background: #ffffffd9;
       backdrop-filter: blur(10px);
+      padding: 12px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
-
-    .navbar-brand strong {
-      color: #ff80ab;
+    .navbar-brand {
       font-weight: 700;
+      font-size: 1.3rem;
+      color: #ff6fa8 !important;
     }
-
     .nav-link {
-      color: #555 !important;
       font-weight: 500;
+      color: #444 !important;
+      transition: .3s;
     }
-
     .nav-link:hover {
-      color: #ff4081 !important;
-      text-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
+      color: #ff6fa8 !important;
     }
 
     /* Hero */
     .hero {
-      background: linear-gradient(180deg, #fff5f8, #eafaff);
-      padding: 110px 0 100px;
-    }
-
-    .hero h1 {
-      font-family: 'Pacifico', cursive;
-      font-size: 2.8rem;
-      background: linear-gradient(90deg, #ff7eb3, #ffb6c1, #ffcce7, #a0e7e5);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 10px;
-    }
-
-    .hero .lead {
-      color: #555;
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-    }
-
-    .social-links a {
-      color: #ff6f91;
-      text-decoration: none;
-      font-weight: 500;
-      margin: 0 8px;
-    }
-
-    .social-links a:hover {
-      color: #00bcd4;
-      text-decoration: underline;
-    }
-
-    .btn-profile {
-      background: linear-gradient(90deg, #a0e7e5, #ffb6c1);
-      border: none;
-      border-radius: 50px;
-      padding: 10px 25px;
-      font-weight: 600;
-      color: #333;
-      box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
-      transition: 0.3s;
-    }
-
-    .btn-profile:hover {
-      transform: translateY(-2px);
-      background: linear-gradient(90deg, #ffb6c1, #a0e7e5);
-    }
-
-    /* Section Titles */
-    section h2 {
-      font-family: 'Pacifico', cursive;
-      color: #ff6f91;
-      margin-bottom: 15px;
-    }
-
-    /* Sections */
-    .about, .experience, .skills, .contact {
-      padding: 80px 0;
-    }
-
-    .about { background: linear-gradient(to bottom, #fff6fa, #fff9ff); }
-    .experience { background: linear-gradient(to bottom, #e3faff, #f5fdff); }
-    .skills { background: linear-gradient(to bottom, #fff9f3, #fffaf7); }
-    .contact { background: linear-gradient(to bottom, #e0f7fa, #f0ffff); }
-
-    footer {
-      background: linear-gradient(90deg, #ffeaf2, #e3f5ff);
-      color: #555;
-      padding: 40px 0;
+      padding: 140px 0;
+      background: linear-gradient(135deg, #ffe4ef, #e9f7ff);
       text-align: center;
-      position: relative;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ff4f92;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
     }
 
-    /* Sidebar kanan */
-    .sidebar {
-      position: fixed;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background: linear-gradient(180deg, #ffeaf2, #e3f5ff);
-      border-radius: 20px 0 0 20px;
-      box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.1);
-      padding: 15px;
-      z-index: 1000;
-    }
-
-    .sidebar a {
-      display: block;
-      margin: 10px 0;
-      color: #ff6f91;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    .sidebar a:hover {
-      color: #00bcd4;
-      transform: translateX(-5px);
-    }
-
-    img.rounded, .rounded-circle {
-      border: 3px solid #ffd6e8;
-      box-shadow: 0 5px 15px rgba(255, 182, 193, 0.35);
-    }
-
-    iframe {
-      border: none;
-      border-radius: 12px;
-      width: 100%;
-      height: 320px;
-      box-shadow: 0 3px 10px rgba(255, 182, 193, 0.4);
-    }
-
-    [data-animate] {
-      opacity: 0;
-      transform: translateY(25px);
-      transition: all 0.6s ease;
-    }
-
-    [data-animate].visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Kalimat berjalan */
-    .marquee-container {
-      background: linear-gradient(90deg, #ffdde1, #ee9ca7);
+    .btn-main {
+      background: #ff6fa8;
       color: white;
+      padding: 10px 28px;
+      border-radius: 50px;
+      border: none;
       font-weight: 600;
-      padding: 10px 0;
-      font-size: 1.1rem;
-      overflow: hidden;
-      white-space: nowrap;
+      transition: .3s;
+    }
+    .btn-main:hover {
+      background: #ff87b9;
+      transform: translateY(-3px);
     }
 
-    .marquee-text {
-      display: inline-block;
-      animation: marquee 12s linear infinite;
+    /* Section Title */
+    section h2 {
+      font-weight: 700;
+      color: #ff4f92;
+      margin-bottom: 25px;
+      font-size: 2.2rem;
     }
 
-    @keyframes marquee {
-      from { transform: translateX(100%); }
-      to { transform: translateX(-100%); }
+    /* About */
+    .about {
+      padding: 90px 0;
+    }
+
+    /* Experience */
+    .experience {
+      padding: 90px 0;
+      background: #fbfbfb;
+    }
+
+    /* Skills */
+    .skills {
+      padding: 90px 0;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 90px 0;
+      background: #fbfbfb;
+    }
+
+    /* Footer */
+    footer {
+      background: #ffffff;
+      padding: 40px 0;
+      border-top: 1px solid #eee;
+      text-align: center;
+      color: #777;
+    }
+
+    .rounded-img {
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="images/logo.jpg" width="40" class="me-2" alt="Logo">
-      <strong>Portfolio</strong>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="nav">
+    <a class="navbar-brand" href="#">Tina Hartanti</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div id="nav" class="collapse navbar-collapse justify-content-end">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="tina.html">Tina</a></li>
-        <li class="nav-item"><a class="nav-link" href="mey.html">Mey</a></li>
-        <li class="nav-item"><a class="nav-link" href="alda.html">Alda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skill</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Sidebar kanan -->
-<div class="sidebar">
-  <a href="#home"><i class="fas fa-home"></i> Home</a>
-  <a href="#about"><i class="fas fa-user"></i> Tentang Saya</a>
-  <a href="#experience"><i class="fas fa-briefcase"></i> Pengalaman</a>
-  <a href="#skills"><i class="fas fa-star"></i> Skill</a>
-</div>
-
-<!-- Hero -->
-<section class="hero text-center" id="home">
-  <div class="container" data-animate>
-    <img src="images/tina.jpg" alt="Tina Dian Hartanti" class="rounded-circle mb-3" width="160">
-    <h1>Hai, Aku Tina Dian Hartanti 🌷</h1>
-    <p class="lead">Saya adalah mahasiswa sistem informasi angkatan 2023. saya berkuliah di universitas musamus merauke✨</p>
-    <div class="social-links">
-      <a href="https://www.instagram.com/username_kamu" target="_blank">Instagram</a> ·
-      <a href="https://www.linkedin.com/in/username_kamu" target="_blank">LinkedIn</a> ·
-      <a href="https://github.com/username_kamu" target="_blank">GitHub</a>
-    </div>
-    <div class="mt-3">
-      <a href="#about" class="btn btn-profile">Lihat Profil</a>
-    </div>
+<section class="hero" id="home">
+  <div class="container">
+    <img src="images/tina.jpg" width="160" class="rounded-circle mb-3 shadow">
+    <h1>Hai, Aku Tina Dian Hartanti 🌸</h1>
+    <p>Mahasiswa Sistem Informasi Universitas Musamus – 2023</p>
+    <a href="#about" class="btn-main mt-3">Lihat Profil</a>
   </div>
 </section>
 
-<!-- Tentang Saya -->
-<section class="about text-center" id="about">
-  <div class="container" data-animate>
+<section class="about" id="about">
+  <div class="container text-center">
     <h2>Tentang Saya</h2>
-    <p class="mt-3">Aku <b>Tina Dian Hartanti</b>, saya anak dari bapak saya bernama SUTRISNO dan ibunda saya bermana KISWANTI. mereka adalah alasan saya untuk sukses
-       dan menyelesaikan pendidikan saya di jurusan sistem informasi.</p>
-    <img src="images/tinab.jpg" alt="Tentang Tina" class="rounded mt-3" width="240">
+    <p class="mx-auto" style="max-width:700px">Saya Tina Dian Hartanti, anak dari Sutrisno dan Kiswanti. Mereka adalah sumber semangat terbesar saya dalam menyelesaikan pendidikan dan meraih masa depan yang lebih baik.</p>
+    <img src="images/tinab.jpg" class="rounded-img mt-4" width="260">
   </div>
 </section>
 
-<!-- Pengalaman -->
 <section class="experience text-center" id="experience">
-  <div class="container" data-animate>
+  <div class="container">
     <h2>Pengalaman</h2>
-    <ul class="list-unstyled mt-3">
-      <li>saya pernah menjadi pemateri jarkom</li>
-      <li>saya pernah menjadi warga persaudaraan setia hati terate</li>
-      <li>saya pernah mengikuti lomba senam pramuka dan memnangkan juara 1 tingkat distrik</li>
-      <li>saya saat ini sedang menjabat menjai kor pendidikan di hmj</li>
-      <li>saya pernah menjadi penanggung jawab di kegiatan pkkmb jurusan</li>
+    <ul class="list-unstyled">
+      <li>Pemateri Mata Kuliah Jaringan Komputer</li>
+      <li>Anggota Persaudaraan Setia Hati Terate</li>
+      <li>Juara 1 Lomba Senam Pramuka Tingkat Distrik</li>
+      <li>Koordinator Pendidikan HMJ Sistem Informasi</li>
+      <li>Penanggung Jawab PKKMB Jurusan</li>
     </ul>
-    <img src="images/exp_tina.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/exp_tina1.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/exp_tina2.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/exp_tina3.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/exp_tina4.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/exp_tina5.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <div class="mt-4">
+      <img src="images/exp_tina.jpg" width="240" class="rounded-img m-2">
+      <img src="images/exp_tina1.jpg" width="240" class="rounded-img m-2">
+      <img src="images/exp_tina2.jpg" width="240" class="rounded-img m-2">
+    </div>
   </div>
 </section>
 
-<!-- Skill -->
 <section class="skills text-center" id="skills">
-  <div class="container" data-animate>
+  <div class="container">
     <h2>Skill</h2>
-    <p class="mt-3">saya memiliki skill yang tidak banyak. tetapi saya mendapatkan skill ini karena 
-      perjuangan saya yaitu skill di dunia pencak silat dan public speaking 🌼</p>
-    <img src="images/skill_tina1.jpg" alt="Skill" class="rounded mt-3" width="260">
-    <img src="images/skill_tina2.jpg" alt="Skill" class="rounded mt-3" width="260">
+    <p class="mx-auto" style="max-width:700px">Saya memiliki kemampuan di dunia pencak silat serta public speaking, yang saya dapatkan melalui pengalaman dan latihan berkelanjutan.</p>
+    <div class="mt-4">
+      <img src="images/skill_tina1.jpg" width="240" class="rounded-img m-2">
+      <img src="images/skill_tina2.jpg" width="240" class="rounded-img m-2">
+    </div>
   </div>
 </section>
 
-<!-- Kontak -->
 <section class="contact text-center" id="contact">
-  <div class="container" data-animate>
+  <div class="container">
     <h2>Kontak Saya</h2>
     <p>Email: tina@example.com</p>
     <p>Telepon: 0852-5443-9024</p>
     <div class="mt-4">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2375461072967!2d140.39284187473797!3d-8.493735487290458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x688d23e1e18f07df%3A0xf0b6a1e2de7b5a86!2sUniversitas%20Musamus!5e0!3m2!1sid!2sid!4v1730586022006!5m2!1sid!2sid"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2375461072967!2d140.39284187473797!3d-8.493735487290458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x688d23e1e18f07df%3A0xf0b6a1e2de7b5a86!2sUniversitas%20Musamus!5e0!3m2!1sid!2sid!4v1730586022006!5m2!1sid!2sid" width="100%" height="300" style="border:0;border-radius:18px;" allowfullscreen></iframe>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
-  <div class="container" data-animate>
-    <p>&copy; Portofolio Tina Dian Hartanti 💕 </p>
+  <div class="container">
+    <p>&copy; 2025 Portofolio Tina Dian Hartanti</p>
   </div>
 </footer>
 
-<!-- Kalimat Berjalan -->
-<div class="marquee-container">
-  <div class="marquee-text">🌸 Terima kasih sudah mengunjungi portofolio saya! Tetap semangat, terus belajar, dan jangan pernah menyerah untuk meraih mimpi 💖 — Tina Dian Hartanti 🌷</div>
-</div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  const elements = document.querySelectorAll('[data-animate]');
-  function animateOnScroll() {
-    elements.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) el.classList.add('visible');
-    });
-  }
-  window.addEventListener('scroll', animateOnScroll);
-  animateOnScroll();
-</script>
 </body>
 </html>
