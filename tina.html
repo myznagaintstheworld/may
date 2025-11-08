@@ -6,13 +6,14 @@
   <title>Portofolio Tina Dian Hartanti</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome untuk ikon media sosial -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
   <style>
     body {
       background: linear-gradient(to bottom, #fff9fb, #fefcff);
       color: #444;
       font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
     }
 
     /* Navbar */
@@ -57,19 +58,16 @@
       margin-bottom: 20px;
     }
 
-    /* Social Links */
     .social-links a {
       color: #ff6f91;
       text-decoration: none;
       font-weight: 500;
-      margin: 0 10px;
-      font-size: 1.1rem;
-      transition: 0.3s;
+      margin: 0 8px;
     }
 
     .social-links a:hover {
       color: #00bcd4;
-      transform: scale(1.1);
+      text-decoration: underline;
     }
 
     .btn-profile {
@@ -113,25 +111,31 @@
       position: relative;
     }
 
-    /* Kalimat Berjalan */
-    .marquee-container {
-      background: linear-gradient(90deg, #ffdde1, #ee9ca7);
-      color: white;
+    /* Sidebar kanan */
+    .sidebar {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(180deg, #ffeaf2, #e3f5ff);
+      border-radius: 20px 0 0 20px;
+      box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      color: #ff6f91;
+      text-decoration: none;
       font-weight: 600;
-      padding: 10px 0;
-      font-size: 1.1rem;
-      overflow: hidden;
-      white-space: nowrap;
+      transition: 0.3s;
     }
 
-    .marquee-text {
-      display: inline-block;
-      animation: marquee 15s linear infinite;
-    }
-
-    @keyframes marquee {
-      from { transform: translateX(100%); }
-      to { transform: translateX(-100%); }
+    .sidebar a:hover {
+      color: #00bcd4;
+      transform: translateX(-5px);
     }
 
     img.rounded, .rounded-circle {
@@ -157,6 +161,27 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* Kalimat berjalan */
+    .marquee-container {
+      background: linear-gradient(90deg, #ffdde1, #ee9ca7);
+      color: white;
+      font-weight: 600;
+      padding: 10px 0;
+      font-size: 1.1rem;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      animation: marquee 12s linear infinite;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
   </style>
 </head>
 <body>
@@ -181,20 +206,25 @@
   </div>
 </nav>
 
+<!-- Sidebar kanan -->
+<div class="sidebar">
+  <a href="#home"><i class="fas fa-home"></i> Home</a>
+  <a href="#about"><i class="fas fa-user"></i> Tentang Saya</a>
+  <a href="#experience"><i class="fas fa-briefcase"></i> Pengalaman</a>
+  <a href="#skills"><i class="fas fa-star"></i> Skill</a>
+</div>
+
 <!-- Hero -->
-<section class="hero text-center">
+<section class="hero text-center" id="home">
   <div class="container" data-animate>
     <img src="images/tina.jpg" alt="Tina Dian Hartanti" class="rounded-circle mb-3" width="160">
     <h1>Hai, Aku Tina Dian Hartanti 🌷</h1>
     <p class="lead">Saya adalah mahasiswa sistem informasi angkatan 2023. saya berkuliah di universitas musamus merauke✨</p>
-    
-    <!-- Media Sosial Bisa Diklik -->
     <div class="social-links">
-      <a href="https://www.instagram.com/username_kamu" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a> · 
-      <a href="https://www.linkedin.com/in/username_kamu" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a> · 
-      <a href="https://github.com/username_kamu" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.instagram.com/username_kamu" target="_blank">Instagram</a> ·
+      <a href="https://www.linkedin.com/in/username_kamu" target="_blank">LinkedIn</a> ·
+      <a href="https://github.com/username_kamu" target="_blank">GitHub</a>
     </div>
-
     <div class="mt-3">
       <a href="#about" class="btn btn-profile">Lihat Profil</a>
     </div>
@@ -206,49 +236,48 @@
   <div class="container" data-animate>
     <h2>Tentang Saya</h2>
     <p class="mt-3">Aku <b>Tina Dian Hartanti</b>, saya anak dari bapak saya bernama SUTRISNO dan ibunda saya bermana KISWANTI. mereka adalah alasan saya untuk sukses
-       dan menyelesaikan pendidikan saya di jurusan sistem informasi
-      .</p>
+       dan menyelesaikan pendidikan saya di jurusan sistem informasi.</p>
     <img src="images/tinab.jpg" alt="Tentang Tina" class="rounded mt-3" width="240">
   </div>
 </section>
 
 <!-- Pengalaman -->
-<section class="experience text-center">
+<section class="experience text-center" id="experience">
   <div class="container" data-animate>
     <h2>Pengalaman</h2>
     <ul class="list-unstyled mt-3">
       <li>saya pernah menjadi pemateri jarkom</li>
       <li>saya pernah menjadi warga persaudaraan setia hati terate</li>
       <li>saya pernah mengikuti lomba senam pramuka dan memnangkan juara 1 tingkat distrik</li>
-      <li>saya saat ini sedang menjabat menjai kor pendidikan di hmj </li>
-      <li>saya pernah menjadi penangung jawab di kegiatan pkkmb jurusan</li>
+      <li>saya saat ini sedang menjabat menjai kor pendidikan di hmj</li>
+      <li>saya pernah menjadi penanggung jawab di kegiatan pkkmb jurusan</li>
     </ul>
-    <img src="images/exp_tina.jpg" class="rounded mt-3" width="260">
-    <img src="images/exp_tina1.jpg" class="rounded mt-3" width="260">
-    <img src="images/exp_tina2.jpg" class="rounded mt-3" width="260">
-    <img src="images/exp_tina3.jpg" class="rounded mt-3" width="260">
-    <img src="images/exp_tina4.jpg" class="rounded mt-3" width="260">
-    <img src="images/exp_tina5.jpg" class="rounded mt-3" width="260">
+    <img src="images/exp_tina.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <img src="images/exp_tina1.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <img src="images/exp_tina2.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <img src="images/exp_tina3.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <img src="images/exp_tina4.jpg" alt="Experience" class="rounded mt-3" width="260">
+    <img src="images/exp_tina5.jpg" alt="Experience" class="rounded mt-3" width="260">
   </div>
 </section>
 
 <!-- Skill -->
-<section class="skills text-center">
+<section class="skills text-center" id="skills">
   <div class="container" data-animate>
     <h2>Skill</h2>
     <p class="mt-3">saya memiliki skill yang tidak banyak. tetapi saya mendapatkan skill ini karena 
-      perjuangan saya yaiyu skill di dunia pencak silat dan public speaking 🌼</p>
-    <img src="images/skill_tina1.jpg" class="rounded mt-3" width="260">
-    <img src="images/skill_tina2.jpg" class="rounded mt-3" width="260">
+      perjuangan saya yaitu skill di dunia pencak silat dan public speaking 🌼</p>
+    <img src="images/skill_tina1.jpg" alt="Skill" class="rounded mt-3" width="260">
+    <img src="images/skill_tina2.jpg" alt="Skill" class="rounded mt-3" width="260">
   </div>
 </section>
 
 <!-- Kontak -->
-<section class="contact text-center">
+<section class="contact text-center" id="contact">
   <div class="container" data-animate>
     <h2>Kontak Saya</h2>
     <p>Email: tina@example.com</p>
-    <p>Telepon: 0812-3456-7890</p>
+    <p>Telepon: 0852-5443-9024</p>
     <div class="mt-4">
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2375461072967!2d140.39284187473797!3d-8.493735487290458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x688d23e1e18f07df%3A0xf0b6a1e2de7b5a86!2sUniversitas%20Musamus!5e0!3m2!1sid!2sid!4v1730586022006!5m2!1sid!2sid"
@@ -263,7 +292,7 @@
 <!-- Footer -->
 <footer>
   <div class="container" data-animate>
-    <p>&copy; 2025 Portofolio Tina Dian Hartanti 💕 </p>
+    <p>&copy; Portofolio Tina Dian Hartanti 💕 </p>
   </div>
 </footer>
 
