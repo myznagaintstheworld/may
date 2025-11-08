@@ -4,161 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Portfolio | Mey Risnawati</title>
-  <style>
-    :root{
-      --red:#e63b47;
-      --red-strong:#cc2834;
-      --bg:#fff5f6;
-      --muted:#6f6f75;
-      --card:#fff;
-      --radius:14px;
-      --maxw:1100px;
-      --gap:24px;
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background: linear-gradient(180deg,#fff5f6 0%, #fff 70%);
-      color:#222;
-      line-height:1.5;
-    }
-    .container{
-      max-width: var(--maxw);
-      margin:0 auto;
-      padding: 28px;
-    }
-
-    /* NAVBAR */
-    header{
-      background:white;
-      box-shadow:0 6px 18px rgba(0,0,0,0.05);
-      position:sticky;
-      top:0;
-      z-index:40;
-    }
-    .nav-row{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:10px 24px;
-      max-width:var(--maxw);
-      margin:0 auto;
-    }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      font-weight:700;
-      color:var(--red-strong);
-      font-size:20px;
-    }
-    .brand img{width:40px;height:40px;border-radius:50%}
-
-    .people{
-      display:flex;
-      align-items:center;
-      gap:16px;
-      font-weight:700;
-    }
-    .people a{
-      text-decoration:none;
-      color:#222;
-    }
-    .people a.active{
-      color:purple;
-    }
-
-    /* Burger Menu */
-    .burger{
-      display:none;
-      font-size:26px;
-      cursor:pointer;
-    }
-
-    /* HERO */
-    .hero{
-      padding:64px 24px 48px;
-      text-align:center;
-      background:linear-gradient(180deg, rgba(230,59,71,0.06), rgba(255,255,255,0));
-    }
-    .hero-inner{max-width:880px;margin:0 auto;}
-    .hero .avatar{
-      width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 auto 12px;box-shadow:0 10px 30px rgba(198,59,71,0.12);
-    }
-    .hero h1{font-size:48px;margin:8px 0 12px;}
-    .hero p.lead{color:var(--muted);font-size:18px;margin:0 0 20px}
-    .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
-    .btn{
-      padding:12px 22px;border-radius:12px;font-weight:700;border:2px solid transparent;cursor:pointer;text-decoration:none;
-    }
-    .btn-primary{background:var(--red);color:white;}
-    .btn-outline{background:transparent;color:var(--red);border-color:var(--red);}
-    .socials{display:flex;gap:18px;justify-content:center;margin-top:8px}
-    .socials a{font-weight:600;text-decoration:none;color:var(--red)}
-
-    /* MAIN */
-    main{padding:48px 18px}
-    .section-title{font-size:24px;margin:10px 0 16px;color:#222;font-weight:800}
-    .card{
-      background:var(--card);
-      padding:18px;
-      border-radius:16px;
-      box-shadow:0 8px 30px rgba(0,0,0,0.05);
-      margin-bottom:28px;
-    }
-
-    /* Experience */
-    .exp-list{display:flex;flex-direction:column;gap:20px}
-    .exp-item{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
-    .exp-item h4{margin:0;font-size:16px}
-    .exp-item p{margin:6px 0 10px;color:var(--muted);font-size:14px}
-    .exp-images{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
-      gap:10px;
-      margin-top:10px;
-      justify-items:center;
-    }
-    .exp-images img{
-      width:120px;
-      height:120px;
-      border-radius:10px;
-      object-fit:cover; /* menjaga rasio 1:1 */
-      box-shadow:0 3px 10px rgba(0,0,0,0.08);
-    }
-
-    /* Skills */
-    .skills-list{list-style:decimal;padding-left:22px;color:var(--muted)}
-    .skills-list li{margin-bottom:8px;font-size:15px}
-
-    /* Contact */
-    #contact{
-      text-align:center;
-      background:#fff5f6;
-      padding:40px 18px;
-    }
-    #contact a{
-      color:var(--red);
-      font-weight:600;
-      text-decoration:none;
-    }
-
-    /* Footer */
-    footer{
-      padding:24px;
-      background:#fafafa;
-      text-align:center;
-      color:#777;
-      font-size:14px;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width:900px){
-      .people{display:none;}
-      .burger{display:block;}
-    }
-  </style>
+  <link rel="stylesheet" href="styles-mey.css">
 </head>
 <body>
 
@@ -259,14 +105,13 @@
 
   <section id="skills">
     <h2 class="section-title">Skill</h2>
-    <p>Kebanyakan skill saya itu berupa softskill yaitu:</p>
-    <ul class="skills-list">
-      <li>Multitasking (saya bisa membaca sambil mendengarkan lagu atau menyimak podcast)</li>
-      <li>Pendiam (saya bisa diam tanpa diminta a.k.a tidak suka keributan)</li>
-      <li>A good listener (bukan hanya mendengar lewat telinga tapi juga mencerna di otak dan hati, anjay!)</li>
-      <li>Saya bisa menghafal lagu dengan cepat</li>
-      <li>Saya juga bisa masak ofc!</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-card">🎧 Multitasking <p>saya bisa membaca sambil mendengarkan lagu atau menyimak podcast</p></div>
+      <div class="skill-card">🤫 Pendiam <p>saya bisa diam tanpa diminta a.k.a tidak suka keributan</p></div>
+      <div class="skill-card">👂 A good listener <p>bukan hanya mendengar lewat telinga tapi juga mencerna di otak dan hati, anjay!</p></div>
+      <div class="skill-card">🎶 Menghafal lagu cepat <p>saya bisa menghafal lagu dengan cepat</p></div>
+      <div class="skill-card">🍳 Bisa masak <p>saya juga bisa masak ofc!</p></div>
+    </div>
   </section>
 </main>
 
@@ -286,7 +131,6 @@
 </footer>
 
 <script>
-  // Toggle menu burger
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
   burger.addEventListener('click', () => {
