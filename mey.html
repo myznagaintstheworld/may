@@ -106,37 +106,18 @@
     }
 
     /* Experience */
-    .exp-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-    .exp-item{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,0.8);padding:12px;border-radius:12px}
-    .exp-item img{width:84px;height:64px;object-fit:cover;border-radius:8px}
-    .exp-item h4{margin:0;font-size:15px}
-    .exp-item p{margin:4px 0 0;color:var(--muted);font-size:13px}
-    @media (max-width:600px){.exp-list{grid-template-columns:1fr}}
+    .exp-list{display:flex;flex-direction:column;gap:20px}
+    .exp-item{background:rgba(255,255,255,0.8);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
+    .exp-item h4{margin:0;font-size:16px}
+    .exp-item p{margin:6px 0 10px;color:var(--muted);font-size:14px}
+    .exp-item img{width:100%;height:auto;border-radius:10px;margin-top:10px;object-fit:cover}
 
     /* Skills */
-    .chips{display:flex;flex-wrap:wrap;gap:10px}
-    .chip{background:white;padding:10px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,0.04);font-weight:600}
+    .skills-list{list-style:disc;padding-left:22px;color:var(--muted)}
+    .skills-list li{margin-bottom:6px}
 
     /* Contact & Footer */
-    .contact-form{display:flex;flex-direction:column;gap:8px}
-    .contact-form input, .contact-form textarea{
-      padding:10px;border-radius:10px;border:1px solid rgba(0,0,0,0.08);font-size:14px
-    }
     footer{padding:36px 18px;text-align:center;color:var(--muted)}
-
-    /* modal */
-    .modal-backdrop{
-      position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;align-items:center;justify-content:center;z-index:100;
-    }
-    .modal{
-      background:white;border-radius:12px;max-width:720px;width:92%;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,0.35)
-    }
-    .modal img{width:100%;border-radius:10px;object-fit:cover}
-    .modal .modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:10px}
-
-    /* small helpers */
-    .muted{color:var(--muted)}
-    .center{text-align:center}
   </style>
 </head>
 <body>
@@ -157,9 +138,9 @@
       </ul>
     </nav>
     <div class="people" style="font-weight:700">
-      <a href="#" style="color:#222;margin-right:12px;text-decoration:none">Tina</a>
+      <a href="tina.html" style="color:#222;margin-right:12px;text-decoration:none">Tina</a>
       <a href="#" class="active" style="text-decoration:none">Mey</a>
-      <a href="#" style="color:#222;margin-left:12px;text-decoration:none">Alda</a>
+      <a href="alda.html" style="color:#222;margin-left:12px;text-decoration:none">Alda</a>
     </div>
   </div>
 </header>
@@ -177,9 +158,7 @@
     </div>
 
     <div class="socials">
-      <a href="#" id="instagramBtn">Instagram</a>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/meyrisnaa_?igsh=eDE3c3VwZzB1M3Zu" target="_blank">Instagram</a>
     </div>
   </div>
 </section>
@@ -194,7 +173,6 @@
           <p>I’m someone who never gives up on learning, even when I feel behind others my age who are already working.
              I believe everyone has their own timeline.
              Right now, I’m in my 5th semester of college, focusing on improving my skills, exploring opportunities, and preparing myself to make a real impact.</p>
-
           <div class="quote">Saya mengutamakan tipografi yang jelas, kontras warna yang tepat, dan struktur informasi yang sederhana agar mudah dipahami pengguna dan mudah dipelihara tim.</div>
         </section>
 
@@ -202,81 +180,61 @@
           <h2 class="section-title">Pengalaman</h2>
           <div class="exp-list">
             <div class="exp-item">
-              <div>
-                <h4>TK — Sakit demam berdarah</h4>
-                <p class="muted">Dirawat di rumah sakit selama sebulan (foto tidak tersedia)</p>
-              </div>
+              <h4>TK — Sakit demam berdarah</h4>
+              <p>Dirawat di rumah sakit selama sebulan (foto tidak tersedia)</p>
             </div>
 
             <div class="exp-item">
-              <div>
-                <h4>SMP — Kertas ujian terrobek</h4>
-                <p class="muted">Kertas ujian saya pernah dirobek ibu guru karena katanya saya ribut saat ujian (ilofyu buguru).</p>
-              </div>
+              <h4>SMP — Kertas ujian terrobek</h4>
+              <p>Kertas ujian saya pernah dirobek ibu guru karena katanya saya ribut saat ujian (ilofyu buguru).</p>
             </div>
 
             <div class="exp-item">
+              <h4>SMA — Rekor Senam Pramuka</h4>
+              <p>Berpartisipasi dalam pemecahan rekor senam pramuka terbanyak di Indonesia (LIBRA).</p>
               <img src="kuliahmey.jpg" alt="Kegiatan sekolah">
-              <div>
-                <h4>SMA — Rekor Senam Pramuka</h4>
-                <p class="muted">Berpartisipasi dalam pemecahan rekor senam pramuka terbanyak di Indonesia (LIBRA).</p>
-              </div>
             </div>
 
             <div class="exp-item">
+              <h4>Tes Penerimaan Polwan</h4>
+              <p>Mengikuti tes penerimaan polwan 3 tahun berturut-turut (2020, 2021, 2022).</p>
               <img src="tes2020.jpg" alt="Tes Polwan 2020">
-              <div>
-                <h4>Tes Penerimaan Polwan</h4>
-                <p class="muted">Mengikuti tes penerimaan polwan 3 tahun berturut-turut (2020, 2021, 2022).</p>
-              </div>
             </div>
 
             <div class="exp-item">
+              <h4>Fisioterapi</h4>
+              <p>Menjalani fisioterapi untuk tulang belakang yang bengkok selama sebulan.</p>
               <img src="tulang.jpg" alt="fisioterapi tulang">
-              <div>
-                <h4>Fisioterapi</h4>
-                <p class="muted">Menjalani fisioterapi untuk tulang belakang yang bengkok selama sebulan.</p>
-              </div>
             </div>
 
             <div class="exp-item">
+              <h4>Bekerja — Kedai Donat</h4>
+              <p>Bekerja di sebuah kedai donat terkenal di Merauke selama 2 tahun 2 bulan.</p>
               <img src="kerja.jpg" alt="Bekerja di kedai donat">
-              <div>
-                <h4>Bekerja — Kedai Donat</h4>
-                <p class="muted">Bekerja di sebuah kedai donat terkenal di Merauke selama 2 tahun 2 bulan.</p>
-              </div>
             </div>
 
             <div class="exp-item">
+              <h4>Mahasiswi Sistem Informasi</h4>
+              <p>Pengalaman paling menarik: menjadi MAHASISWA SISTEM INFORMASI!! wow what a experience!!</p>
               <img src="kuliahmey.jpg" alt="kuliah">
-              <div>
-                <h4>Mahasiswi Sistem Informasi</h4>
-                <p class="muted">Pengalaman paling menarik: menjadi MAHASISWA SISTEM INFORMASI!! wow what a experience!!</p>
-              </div>
             </div>
           </div>
         </section>
 
         <section id="skills" style="margin-top:28px">
           <h2 class="section-title">Skill</h2>
-          <p class="muted">Kebanyakan skill saya berupa softskill:</p>
-          <div class="chips" style="margin-top:12px">
-            <div class="chip">Multitasking</div>
-            <div class="chip">Pendiam</div>
-            <div class="chip">A good listener</div>
-            <div class="chip">Menghafal lagu cepat</div>
-            <div class="chip">Bisa memasak</div>
-          </div>
+          <ul class="skills-list">
+            <li>Multitasking</li>
+            <li>Pendiam</li>
+            <li>A good listener</li>
+            <li>Menghafal lagu cepat</li>
+            <li>Bisa memasak</li>
+          </ul>
         </section>
       </div>
 
       <!-- right column -->
       <aside>
-        <div class="card" style="margin-bottom:18px">
-          <h3 class="section-title">Ringkasan</h3>
-          <p class="muted">Profesional desain antarmuka dan front-end yang berfokus pada tampilan bersih, konsisten, dan mudah diakses.</p>
-        </div>
-
         <div class="card" style="margin-bottom:18px">
           <h3 class="section-title">Kontak</h3>
           <p class="muted">Email: <a href="mailto:meyrisna516@gmail.com">meyrisna516@gmail.com</a></p>
@@ -285,108 +243,14 @@
             <a class="btn btn-primary" href="mailto:meyrisna516@gmail.com">Kirim Email</a>
           </div>
         </div>
-
-        <div class="card">
-          <h3 class="section-title">Photo Instagram</h3>
-          <img src="instagrammey.jpg" alt="Instagram Mey" style="width:100%;border-radius:10px;object-fit:cover">
-          <div style="margin-top:10px" class="center">
-            <a id="openInstagramLink" class="btn btn-outline" href="#" target="_blank">Buka Instagram</a>
-          </div>
-        </div>
       </aside>
     </div>
   </div>
 </main>
 
 <footer>
-  <div style="max-width:var(--maxw);margin:0 auto;padding:10px;">
-    <p class="muted">© Mey Risnawati — Portfolio</p>
-    <div style="margin-top:12px;max-width:900px;margin-left:auto;margin-right:auto;">
-      <!-- small embedded map to Merauke (replace src if perlu) -->
-      <iframe title="map merauke" src="https://www.google.com/maps?q=Merauke&output=embed" style="width:100%;height:220px;border:0;border-radius:12px"></iframe>
-    </div>
-  </div>
+  <p>© Mey Risnawati — Portfolio</p>
 </footer>
-
-<!-- Modal for Instagram preview -->
-<div id="modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
-  <div class="modal" role="document">
-    <h3 style="margin:0 0 10px">Instagram — Mey</h3>
-    <img id="modalImg" src="instagrammey.jpg" alt="Instagram preview">
-    <div class="modal-actions">
-      <a id="modalOpen" class="btn btn-primary" href="#" target="_blank">Buka di Instagram</a>
-      <button id="modalClose" class="btn btn-outline">Tutup</button>
-    </div>
-  </div>
-</div>
-
-<script>
-  // --- CONFIG: ganti sesuai akun Instagram kamu ---
-  const instagramLink = "https://www.instagram.com/meyrisnaa_?igsh=eDE3c3VwZzB1M3Zu"; // <-- ganti ini ke akun Instagram asli
-  // ------------------------------------------------
-
-  // smooth scroll for internal links
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click', e=>{
-      const href = a.getAttribute('href');
-      if(href.startsWith('#')){
-        e.preventDefault();
-        const el = document.querySelector(href);
-        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
-      }
-    });
-  });
-
-  // Modal logic
-  const modal = document.getElementById('modal');
-  const instagramBtn = document.getElementById('instagramBtn');
-  const modalClose = document.getElementById('modalClose');
-  const modalOpen = document.getElementById('modalOpen');
-  const openInstagramLink = document.getElementById('openInstagramLink');
-
-  function openModal(){
-    modal.style.display='flex';
-    modal.setAttribute('aria-hidden','false');
-    modalClose.focus();
-  }
-  function closeModal(){
-    modal.style.display='none';
-    modal.setAttribute('aria-hidden','true');
-  }
-
-  instagramBtn.addEventListener('click', e=>{
-    e.preventDefault();
-    openModal();
-  });
-
-  modalClose.addEventListener('click', closeModal);
-  modal.addEventListener('click', (e)=>{
-    if(e.target === modal) closeModal();
-  });
-
-  // set link targets to instagram profile
-  modalOpen.href = instagramLink;
-  openInstagramLink.href = instagramLink;
-  // also the Instagram menu item opens modal and has link to open profile from modal
-  // make ESC close modal
-  window.addEventListener('keydown', e=>{
-    if(e.key === 'Escape') closeModal();
-  });
-
-  // contact button alternative behavior
-  document.getElementById('contactBtn').addEventListener('click', function(e){
-    // default smooth scroll handled above
-  });
-
-  // small enhancement: lazy-check image existence (if missing, show placeholder)
-  document.querySelectorAll('img').forEach(img=>{
-    img.addEventListener('error', ()=> {
-      img.src = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(
-        '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><rect width="100%" height="100%" fill="#f2f2f2"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#bbb" font-size="22">Image not found</text></svg>'
-      );
-    });
-  });
-</script>
 
 </body>
 </html>
