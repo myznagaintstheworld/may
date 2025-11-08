@@ -21,8 +21,6 @@
       margin:0;
       background: linear-gradient(180deg,#fff5f6 0%, #fff 70%);
       color:#222;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
       line-height:1.5;
     }
     .container{
@@ -33,8 +31,8 @@
 
     /* NAVBAR */
     header{
-      background: white;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      background:white;
+      box-shadow:0 6px 18px rgba(0,0,0,0.05);
       position:sticky;
       top:0;
       z-index:40;
@@ -43,7 +41,6 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:16px;
       padding:10px 24px;
       max-width:var(--maxw);
       margin:0 auto;
@@ -57,67 +54,107 @@
       font-size:20px;
     }
     .brand img{width:40px;height:40px;border-radius:50%}
-    nav ul{display:flex;gap:16px;list-style:none;padding:0;margin:0}
-    nav a{
-      text-decoration:none;color:#333;padding:6px 10px;border-radius:8px;font-weight:600;
+
+    .people{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      font-weight:700;
     }
-    nav a.active{color:var(--red);}
+    .people a{
+      text-decoration:none;
+      color:#222;
+    }
+    .people a.active{
+      color:purple;
+    }
+
+    /* Burger Menu */
+    .burger{
+      display:none;
+      font-size:26px;
+      cursor:pointer;
+    }
 
     /* HERO */
     .hero{
       padding:64px 24px 48px;
       text-align:center;
       background:linear-gradient(180deg, rgba(230,59,71,0.06), rgba(255,255,255,0));
-      border-bottom:1px solid rgba(0,0,0,0.03);
     }
     .hero-inner{max-width:880px;margin:0 auto;}
     .hero .avatar{
       width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 auto 12px;box-shadow:0 10px 30px rgba(198,59,71,0.12);
     }
-    .hero h1{font-size:48px;margin:8px 0 12px;letter-spacing:-0.02em}
+    .hero h1{font-size:48px;margin:8px 0 12px;}
     .hero p.lead{color:var(--muted);font-size:18px;margin:0 0 20px}
     .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
     .btn{
       padding:12px 22px;border-radius:12px;font-weight:700;border:2px solid transparent;cursor:pointer;text-decoration:none;
     }
-    .btn-primary{background:var(--red);color:white;box-shadow:0 8px 20px rgba(198,59,71,0.12)}
+    .btn-primary{background:var(--red);color:white;}
     .btn-outline{background:transparent;color:var(--red);border-color:var(--red);}
-
     .socials{display:flex;gap:18px;justify-content:center;margin-top:8px}
     .socials a{font-weight:600;text-decoration:none;color:var(--red)}
 
-    /* MAIN GRID */
+    /* MAIN */
     main{padding:48px 18px}
-    .grid{display:grid;grid-template-columns:1fr 380px;gap:var(--gap);max-width:var(--maxw);margin:0 auto}
-    @media (max-width:900px){
-      .grid{grid-template-columns:1fr}
-      nav ul{display:none}
-    }
-
-    /* About card */
     .section-title{font-size:24px;margin:10px 0 16px;color:#222;font-weight:800}
     .card{
-      background:var(--card);padding:18px;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,0.05);
-    }
-    .about p{color:var(--muted);margin:0 0 12px}
-    .quote{
-      margin-top:16px;padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#fff);box-shadow:0 8px 20px rgba(0,0,0,0.04);
-      color:#2d2d2d;border-left:6px solid rgba(230,59,71,0.12)
+      background:var(--card);
+      padding:18px;
+      border-radius:16px;
+      box-shadow:0 8px 30px rgba(0,0,0,0.05);
+      margin-bottom:28px;
     }
 
     /* Experience */
     .exp-list{display:flex;flex-direction:column;gap:20px}
-    .exp-item{background:rgba(255,255,255,0.8);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
+    .exp-item{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
     .exp-item h4{margin:0;font-size:16px}
     .exp-item p{margin:6px 0 10px;color:var(--muted);font-size:14px}
-    .exp-item img{width:100%;height:auto;border-radius:10px;margin-top:10px;object-fit:cover}
+    .exp-images{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+      gap:10px;
+      margin-top:10px;
+    }
+    .exp-images img{
+      width:100%;
+      border-radius:10px;
+      object-fit:cover;
+    }
 
     /* Skills */
     .skills-list{list-style:disc;padding-left:22px;color:var(--muted)}
     .skills-list li{margin-bottom:6px}
 
-    /* Contact & Footer */
-    footer{padding:36px 18px;text-align:center;color:var(--muted)}
+    /* Contact */
+    #contact{
+      text-align:center;
+      background:#fff5f6;
+      padding:40px 18px;
+    }
+    #contact a{
+      color:var(--red);
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    /* Footer */
+    footer{
+      padding:24px;
+      background:#fafafa;
+      text-align:center;
+      color:#777;
+      font-size:14px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width:900px){
+      .people{display:none;}
+      .burger{display:block;}
+    }
   </style>
 </head>
 <body>
@@ -125,23 +162,15 @@
 <header>
   <div class="nav-row">
     <div class="brand">
-      <img src="profilmey.jpg" alt="logo mey">
+      <img src="images/logo.jpg" alt="logo mey">
       <span>Portfolio</span>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#experience">Pengalaman</a></li>
-        <li><a href="#skills">Skill</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
-    </nav>
-    <div class="people" style="font-weight:700">
-      <a href="tina.html" style="color:#222;margin-right:12px;text-decoration:none">Tina</a>
-      <a href="#" class="active" style="text-decoration:none">Mey</a>
-      <a href="alda.html" style="color:#222;margin-left:12px;text-decoration:none">Alda</a>
+    <div class="people" id="navLinks">
+      <a href="tina.html">Tina</a>
+      <a href="#" class="active">Mey</a>
+      <a href="alda.html">Alda</a>
     </div>
+    <div class="burger" id="burger">☰</div>
   </div>
 </header>
 
@@ -154,7 +183,7 @@
 
     <div class="cta">
       <a class="btn btn-primary" href="#about">Lihat Profil</a>
-      <a class="btn btn-outline" id="contactBtn" href="#contact">Kontak</a>
+      <a class="btn btn-outline" href="#contact">Kontak</a>
     </div>
 
     <div class="socials">
@@ -163,94 +192,117 @@
   </div>
 </section>
 
-<main>
-  <div class="container">
-    <div class="grid">
-      <!-- left column -->
-      <div>
-        <section id="about" class="card about">
-          <h2 class="section-title">Tentang Saya</h2>
-          <p>I’m someone who never gives up on learning, even when I feel behind others my age who are already working.
-             I believe everyone has their own timeline.
-             Right now, I’m in my 5th semester of college, focusing on improving my skills, exploring opportunities, and preparing myself to make a real impact.</p>
-        </section>
+<main class="container">
+  <section id="about" class="card">
+    <h2 class="section-title">Tentang Saya</h2>
+    <p>I’m someone who never gives up on learning, even when I feel behind others my age who are already working.
+      I believe everyone has their own timeline.
+      Right now, I’m in my 5th semester of college, focusing on improving my skills, exploring opportunities, and preparing myself to make a real impact.</p>
+  </section>
 
-        <section id="experience" style="margin-top:28px">
-          <h2 class="section-title">Pengalaman</h2>
-          <div class="exp-list">
-            <div class="exp-item">
-              <h4>TK — Sakit demam berdarah</h4>
-              <p>Dirawat di rumah sakit selama sebulan (foto tidak tersedia)</p>
-            </div>
-
-            <div class="exp-item">
-              <h4>SMP — Kertas ujian terrobek</h4>
-              <p>Kertas ujian saya pernah dirobek ibu guru karena katanya saya ribut saat ujian (ilofyu buguru).</p>
-            </div>
-
-            <div class="exp-item">
-              <h4>SMA — Rekor Senam Pramuka</h4>
-              <p>Berpartisipasi dalam pemecahan rekor senam pramuka terbanyak di Indonesia (LIBRA).</p>
-            </div>
-
-            <div class="exp-item">
-              <h4>Tes Penerimaan Polwan</h4>
-              <p>Mengikuti tes penerimaan polwan 3 tahun berturut-turut (2020, 2021, 2022).</p>
-              <img src="images/tes2020.jpg" alt="Tes Polwan 2020-2022">
-              <img src="images/tes2021.jpg" alt="Tes Polwan 2020-2022">
-              <img src="images/tes2022.jpg" alt="Tes Polwan 2020-2022">
-            </div>
-
-            <div class="exp-item">
-              <h4>Fisioterapi</h4>
-              <p>Menjalani fisioterapi untuk tulang belakang yang bengkok selama sebulan.</p>
-              <img src="images/fisioterapi.jpg" alt="fisioterapi tulang">
-            </div>
-
-            <div class="exp-item">
-              <h4>Bekerja — Kedai Donat</h4>
-              <p>Bekerja di sebuah kedai donat terkenal di Merauke selama 2 tahun 2 bulan.</p>
-              <img src="images/kerja.jpg" alt="Bekerja di kedai donat">
-            </div>
-
-            <div class="exp-item">
-              <h4>Mahasiswi Sistem Informasi</h4>
-              <p>Pengalaman paling menarik: menjadi MAHASISWA SISTEM INFORMASI!! wow what a experience!!</p>
-              <img src="images/kuliahmey.jpg" alt="kuliah">
-            </div>
-          </div>
-        </section>
-
-        <section id="skills" style="margin-top:28px">
-          <h2 class="section-title">Skill</h2>
-          <ul class="skills-list">
-            <li>Multitasking</li>
-            <li>Pendiam</li>
-            <li>A good listener</li>
-            <li>Menghafal lagu cepat</li>
-            <li>Bisa memasak</li>
-          </ul>
-        </section>
+  <section id="experience">
+    <h2 class="section-title">Pengalaman</h2>
+    <div class="exp-list">
+      <div class="exp-item">
+        <h4>TK — Sakit demam berdarah</h4>
+        <p>Dirawat di rumah sakit selama sebulan (foto tidak tersedia)</p>
       </div>
 
-      <!-- right column -->
-      <aside>
-        <div class="card" style="margin-bottom:18px">
-          <h3 class="section-title">Kontak</h3>
-          <p class="muted">Email: <a href="mailto:meyrisna516@gmail.com">meyrisna516@gmail.com</a></p>
-          <p class="muted">Lokasi: Merauke, Indonesia</p>
-          <div style="margin-top:12px">
-            <a class="btn btn-primary" href="mailto:meyrisna516@gmail.com">Kirim Email</a>
-          </div>
+      <div class="exp-item">
+        <h4>SMP — Kertas ujian terrobek</h4>
+        <p>Kertas ujian saya pernah dirobek ibu guru karena katanya saya ribut saat ujian (ilofyu buguru).</p>
+      </div>
+
+      <div class="exp-item">
+        <h4>SMA — Rekor Senam Pramuka</h4>
+        <p>Berpartisipasi dalam pemecahan rekor senam pramuka terbanyak di Indonesia (LIBRA).</p>
+      </div>
+
+      <div class="exp-item">
+        <h4>Tes Penerimaan Polwan</h4>
+        <p>Mengikuti tes penerimaan polwan 3 tahun berturut-turut (2020, 2021, 2022).</p>
+        <div class="exp-images">
+          <img src="images/tes2020.jpg" alt="Tes Polwan">
+          <img src="images/tes2021.jpg" alt="Tes Polwan">
+          <img src="images/tes2022.jpg" alt="Tes Polwan">
         </div>
-      </aside>
+      </div>
+
+      <div class="exp-item">
+        <h4>Fisioterapi</h4>
+        <p>Menjalani fisioterapi untuk tulang belakang yang bengkok selama sebulan.</p>
+        <div class="exp-images">
+          <img src="images/tulang.jpg" alt="fisioterapi">
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <h4>Bekerja — Kedai Donat</h4>
+        <p>Bekerja di sebuah kedai donat terkenal di Merauke selama 2 tahun 2 bulan.</p>
+        <div class="exp-images">
+          <img src="images/kerja.jpg" alt="Bekerja di kedai donat">
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <h4>Mahasiswi Sistem Informasi</h4>
+        <p>Pengalaman paling menarik: menjadi MAHASISWA SISTEM INFORMASI!! wow what a experience!!</p>
+        <div class="exp-images">
+          <img src="images/kuliahmey.jpg" alt="kuliah">
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skill</h2>
+    <ul class="skills-list">
+      <li>Multitasking</li>
+      <li>Pendiam</li>
+      <li>A good listener</li>
+      <li>Menghafal lagu cepat</li>
+      <li>Bisa memasak</li>
+    </ul>
+  </section>
 </main>
 
+<!-- Kontak Pindah ke Bawah -->
+<section id="contact">
+  <h2 class="section-title">Kontak</h2>
+  <p>Email: <a href="mailto:meyrisna516@gmail.com">meyrisna516@gmail.com</a></p>
+  <p>Lokasi: Merauke, Indonesia</p>
+  <p><a class="btn btn-primary" href="mailto:meyrisna516@gmail.com">Kirim Email</a></p>
+
+  <!-- Peta Google -->
+  <div style="margin-top:20px;">
+    <iframe src="https://www.google.com/maps?q=Merauke%2C%20Indonesia&output=embed" width="100%" height="250" style="border:0;border-radius:12px;"></iframe>
+  </div>
+</section>
+
 <footer>
-  <p>© Mey Risnawati — Portfolio</p>
+  <p>© 2025 Mey Risnawati — Portfolio</p>
 </footer>
+
+<script>
+  // Toggle menu burger
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    if(navLinks.style.display === 'flex'){
+      navLinks.style.display = 'none';
+    } else {
+      navLinks.style.display = 'flex';
+      navLinks.style.flexDirection = 'column';
+      navLinks.style.background = '#fff';
+      navLinks.style.position = 'absolute';
+      navLinks.style.right = '24px';
+      navLinks.style.top = '70px';
+      navLinks.style.padding = '12px 18px';
+      navLinks.style.borderRadius = '12px';
+      navLinks.style.boxShadow = '0 6px 20px rgba(0,0,0,0.1)';
+    }
+  });
+</script>
 
 </body>
 </html>
