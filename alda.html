@@ -6,149 +6,7 @@
   <title>Portofolio Alda Ufriyanti</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: linear-gradient(to bottom, #faf6ff, #fdfcff);
-      color: #4b4453;
-      font-family: "Quicksand", sans-serif;
-    }
-
-    /* Navbar */
-    .navbar {
-      background: linear-gradient(90deg, #f7e9ff, #e9dcff);
-      backdrop-filter: blur(10px);
-    }
-
-    .navbar-brand strong {
-      color: #a279d1;
-      font-weight: 700;
-      font-family: "Playfair Display", serif;
-    }
-
-    .nav-link {
-      color: #5a4c72 !important;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    .nav-link:hover {
-      color: #b388eb !important;
-      text-shadow: 0 0 6px rgba(179, 136, 235, 0.4);
-    }
-
-    /* Hero */
-    .hero {
-      background: linear-gradient(180deg, #f8f2ff, #f0eaff);
-      padding: 110px 0 100px;
-    }
-
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      background: linear-gradient(90deg, #a77ee0, #cba0ff, #e0c3fc);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 10px;
-    }
-
-    .hero .lead {
-      color: #5e5370;
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-    }
-
-    .social-links a {
-      color: #a279d1;
-      text-decoration: none;
-      font-weight: 500;
-      margin: 0 6px;
-    }
-
-    .social-links a:hover {
-      color: #c79aff;
-      text-decoration: underline;
-    }
-
-    .btn-profile {
-      background: linear-gradient(90deg, #caa3ff, #e0b3ff);
-      border: none;
-      border-radius: 50px;
-      padding: 10px 25px;
-      font-weight: 600;
-      color: #fff;
-      box-shadow: 0 4px 12px rgba(160, 120, 220, 0.3);
-      transition: 0.3s;
-    }
-
-    .btn-profile:hover {
-      transform: translateY(-2px);
-      background: linear-gradient(90deg, #e0b3ff, #caa3ff);
-    }
-
-    /* Section Titles */
-    section h2 {
-      font-family: 'Playfair Display', serif;
-      color: #8e6fd4;
-      margin-bottom: 15px;
-    }
-
-    /* Sections */
-    .about, .experience, .skills, .contact {
-      padding: 80px 0;
-    }
-
-    .about {
-      background: linear-gradient(to bottom, #f6efff, #faf7ff);
-    }
-
-    .experience {
-      background: linear-gradient(to bottom, #efe6ff, #f7f3ff);
-    }
-
-    .skills {
-      background: linear-gradient(to bottom, #f8f3ff, #fbf9ff);
-    }
-
-    .contact {
-      background: linear-gradient(to bottom, #ece2ff, #f7efff);
-    }
-
-    footer {
-      background: linear-gradient(90deg, #f3e8ff, #e7dbff);
-      color: #5a4c72;
-      padding: 40px 0;
-      text-align: center;
-    }
-
-    img.rounded, .rounded-circle {
-      border: 3px solid #d9c1ff;
-      box-shadow: 0 5px 15px rgba(179, 136, 235, 0.35);
-    }
-
-    iframe {
-      border: none;
-      border-radius: 12px;
-      width: 100%;
-      height: 320px;
-      box-shadow: 0 3px 10px rgba(179, 136, 235, 0.4);
-    }
-
-    /* Scroll Animation */
-    [data-animate] {
-      opacity: 0;
-      transform: translateY(25px);
-      transition: all 0.6s ease;
-    }
-
-    [data-animate].visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  <link rel="stylesheet" href="styles-alda.css">
 </head>
 <body>
 
@@ -165,13 +23,10 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="nav">
       <ul class="navbar-nav">
-        <!-- Navigasi halaman Alda -->
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
         <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Skill</a></li>
-
-        <!-- Link teman -->
         <li class="nav-item"><a class="nav-link" href="tina.html">Tina</a></li>
         <li class="nav-item"><a class="nav-link" href="mey.html">Mey</a></li>
         <li class="nav-item"><a class="nav-link active" href="alda.html">Alda</a></li>
@@ -183,10 +38,11 @@
 <!-- Hero -->
 <section id="home" class="hero text-center">
   <div class="container" data-animate>
-    <img src="images/Aldaprofile.jpg" alt="Alda Ufriyanti" class="rounded-circle mb-3" width="160">
-    <h1>Hallo i'm, Alda Ufriyanti 🌸</h1>
+    <img src="images/Aldaprofile.jpg" alt="Alda Ufriyanti" class="rounded-circle mb-3 profile-img">
+    <h1>Hallo, I'm Alda Ufriyanti 🌸</h1>
     <div class="social-links">
-     <a href="https://www.instagram.com/username_kamu" target="_blank">Instagram</a>
+      <a href="https://www.instagram.com/username_kamu" target="_blank">Instagram</a>
+    </div>
   </div>
 </section>
 
@@ -194,31 +50,60 @@
 <section id="about" class="about text-center">
   <div class="container" data-animate>
     <h2>Tentang Saya</h2>
-    <p class="mt-3">Hallo Saya merupakan Mahasiswi Program Studi Sistem Informasi Universitas Musamus Merauke angkatan 2023, saya seorang mahasiswi yang aktif di organisasi HMJ HIMASI (Himpunan Mahasiswa Sistem Informasi).</p>
-    <img src="images/mahasiswaAlda.jpg" alt="Tentang Alda" class="rounded mt-3" width="240">
+    <p class="mt-3">Hallo! Saya merupakan Mahasiswi Program Studi Sistem Informasi Universitas Musamus Merauke angkatan 2023. Saya aktif di organisasi HIMASI (Himpunan Mahasiswa Sistem Informasi) dan senang belajar hal baru di bidang teknologi.</p>
+    <img src="images/mahasiswaAlda.jpg" alt="Tentang Alda" class="rounded mt-3 about-img">
 
-    <!-- Riwayat Pendidikan -->
-    <div class="education-box mt-5 p-4 mx-auto" 
-         style="max-width:500px; background:#fff2f7; border-radius:15px; box-shadow:0 4px 10px rgba(180,140,210,0.25); text-align:left;">
-      <h5 style="font-family:'Playfair Display',serif; color:#6a3fa0; font-weight:700;">Riwayat Pendidikan</h5>
-      <p class="mb-1"><b>SD:</b> MI NURUSH SHOBA ASIKI</p>
-      <p class="mb-1"><b>SMP:</b> SMP NEGERI ASIKI</p>
-      <p class="mb-0"><b>SMA:</b> SMA NEGERI ASIKI</p>
+    <div class="education-box mt-5 p-4 mx-auto">
+      <h5>Riwayat Pendidikan</h5>
+      <p><b>SD:</b> MI NURUSH SHOBA ASIKI</p>
+      <p><b>SMP:</b> SMP NEGERI ASIKI</p>
+      <p><b>SMA:</b> SMA NEGERI ASIKI</p>
     </div>
   </div>
 </section>
-
 
 <!-- Pengalaman -->
 <section id="experience" class="experience text-center">
   <div class="container" data-animate>
     <h2>Pengalaman</h2>
-    <ul class="list-unstyled mt-3">
-      <li> Saya memiliki pengalaman kerja sebelum kuliah sebagai staff administrasi koperasi peminjaman uang di CV Anugrah Mandiri Asiki dan setelah saya kuliah saya pernah bekerja sebagai kasir di toko Omart sambil kuliah. Dan kini saya tidak lagi bekerja dan lebih memilih fokus di kuliah saya, dan banyak pengalaman yang saya ambil diperkuliahan semenjak saya mengikuti organisasi HMJ.</li>
-    </ul>
-    <img src="images/cv.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/omart.jpg" alt="Experience" class="rounded mt-3" width="260">
-    <img src="images/organisasi.jpg" alt="Experience" class="rounded mt-3" width="260">
+
+    <div class="exp-list mt-4">
+      <div class="exp-item">
+        <img src="images/cv.jpg" alt="CV Anugrah Mandiri">
+        <div class="exp-text">
+          <h4>Staff Administrasi — CV Anugrah Mandiri</h4>
+          <ul>
+            <li>Mengelola dokumen pinjaman dan data anggota koperasi.</li>
+            <li>Melayani pelanggan dengan komunikasi profesional.</li>
+            <li>Menyusun laporan bulanan menggunakan Excel dan Word.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <img src="images/omart.jpg" alt="Kasir Omart">
+        <div class="exp-text">
+          <h4>Kasir — Toko Omart</h4>
+          <ul>
+            <li>Melakukan transaksi dengan cepat dan akurat.</li>
+            <li>Mengelola stok barang ringan di area kasir.</li>
+            <li>Melatih kemampuan multitasking sambil menjalani perkuliahan.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <img src="images/organisasi.jpg" alt="HMJ HIMASI">
+        <div class="exp-text">
+          <h4>Anggota HMJ HIMASI</h4>
+          <ul>
+            <li>Aktif dalam kegiatan kemahasiswaan di bidang IT dan kepemimpinan.</li>
+            <li>Berpartisipasi dalam event kampus seperti seminar dan pelatihan.</li>
+            <li>Menambah pengalaman teamwork dan public speaking.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -226,10 +111,26 @@
 <section id="skills" class="skills text-center">
   <div class="container" data-animate>
     <h2>Skill</h2>
-    <p class="mt-3">Word, Excel, Canva</p>
-    <img src="images/word.png" alt="Skill" class="rounded mt-3" width="260">
-    <img src="images/excel-2016-Logo.png" alt="Skill" class="rounded mt-3" width="260">
-    <img src="images/canva.png" alt="Skill" class="rounded mt-3" width="260">
+
+    <div class="skill-list mt-4">
+      <div class="skill-item">
+        <img src="images/canva.png" alt="Canva">
+        <h4>Canva</h4>
+        <p>Mampu membuat desain konten visual seperti poster, banner, dan presentasi dengan gaya menarik.</p>
+      </div>
+
+      <div class="skill-item">
+        <img src="images/excel-2016-Logo.png" alt="Excel">
+        <h4>Microsoft Excel</h4>
+        <p>Terampil dalam pengolahan data, pembuatan tabel, dan analisis sederhana dengan formula dasar.</p>
+      </div>
+
+      <div class="skill-item">
+        <img src="images/word.png" alt="Word">
+        <h4>Microsoft Word</h4>
+        <p>Mampu menyusun dokumen profesional, laporan, dan surat resmi dengan format rapi.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -237,14 +138,13 @@
 <section class="contact text-center">
   <div class="container" data-animate>
     <h2>Kontak Saya</h2>
-    <p>Email: aldaufriyanti@gmail.com</p>
+    <p>Email: <b>aldaufriyanti@gmail.com</b></p>
     <p>Telepon: 0813-0000-0001</p>
     <div class="mt-4">
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2375461072967!2d140.39284187473797!3d-8.493735487290458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x688d23e1e18f07df%3A0xf0b6a1e2de7b5a86!2sUniversitas%20Musamus!5e0!3m2!1sid!2sid!4v1730586022006!5m2!1sid!2sid"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
+        allowfullscreen
+        loading="lazy">
       </iframe>
     </div>
   </div>
@@ -258,16 +158,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  const elements = document.querySelectorAll('[data-animate]');
-  function animateOnScroll() {
-    elements.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) el.classList.add('visible');
-    });
-  }
-  window.addEventListener('scroll', animateOnScroll);
-  animateOnScroll();
-</script>
+<script src="script.js"></script>
 </body>
 </html>
