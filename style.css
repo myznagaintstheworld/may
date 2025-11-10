@@ -29,19 +29,49 @@ footer{background:#5a3e2b; color:#fff; padding:30px 0}
 @media (max-width:576px){
   .hero{padding:30px 0}
 }
-/* Mengatur gambar agar memiliki rasio 2:1 */
+/* Mengatur gambar dengan rasio 1:1 */
 .img-portrait {
   width: 100%;
-  height: auto;
-  max-width: 400px; /* Batasi lebar gambar agar tidak terlalu besar */
-  aspect-ratio: 2 / 1; /* Menjaga rasio 2:1 */
-  object-fit: cover; /* Memastikan gambar dipotong dengan tepat agar sesuai rasio */
-  margin: 10px 0; /* Memberikan jarak antar gambar */
+  height: 0;
+  padding-top: 100%; /* Ini menciptakan rasio 1:1 (kotak) */
+  object-fit: cover; /* Gambar akan dipotong agar pas dengan ukuran */
+  margin: 10px 0;
 }
 
-/* Menyelaraskan gambar di bagian pengalaman dan skill */
+/* Mengatur tata letak bagian pengalaman dengan kolom */
 .experience img,
 .skills img {
-  display: inline-block;
-  margin: 0 auto; /* Gambar berada di tengah */
+  display: block;
+  margin: 0 auto; /* Gambar di tengah */
+}
+
+.experience .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.experience .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.skills .row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills .col-md-6 {
+  margin-bottom: 20px;
+}
+
+/* Menata list pengalaman dengan ikon dan memberi spasi */
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+ul li i {
+  color: #ff6f91;
+  margin-right: 10px;
 }
