@@ -33,7 +33,7 @@ body {
 /* Hero */
 .hero {
   background: linear-gradient(180deg, #fff5f8, #eafaff);
-  padding: 110px 0 100px;
+  padding: 150px 0 100px;
 }
 .hero h1 {
   font-family: "Pacifico", cursive;
