@@ -61,7 +61,7 @@ body {
   padding: 80px 0;
 }
 
-/* Gambar pengalaman */
+/* Gambar pengalaman & skill */
 .img-portrait {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -92,7 +92,7 @@ ul li i {
 .skill-card {
   background: linear-gradient(180deg, #fff, #ffeaf6);
   border-radius: 18px;
-  padding: 25px;
+  padding: 20px;
   box-shadow: 0 4px 10px rgba(255, 182, 193, 0.25);
   transition: all 0.3s ease;
 }
@@ -103,6 +103,7 @@ ul li i {
 .skill-card h5 {
   color: var(--highlight);
   font-weight: 700;
+  margin-top: 8px;
 }
 .skill-card p {
   font-size: 0.95rem;
@@ -144,7 +145,7 @@ footer {
   transform: translateX(-5px);
 }
 
-/* Animasi muncul */
+/* Animasi */
 [data-animate] {
   opacity: 0;
   transform: translateY(25px);
