@@ -1,162 +1,66 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portofolio Alda Ufriyanti</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio | Alda Ulfriyanti</title>
   <link rel="stylesheet" href="styles-alda.css">
 </head>
 <body>
+  <header>
+    <h1>Portofolio Alda Ulfriyanti</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#tentang">Tentang Saya</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#skill">Skill</a>
+    </nav>
+  </header>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg shadow-sm fixed-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#home">
-      <img src="images/logo.jpg" width="40" class="me-2 rounded-circle" alt="Logo">
-      <strong>Portfolio</strong>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <main>
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <p>Halo! Saya Alda Ulfriyanti, seseorang yang menyukai desain dan kreativitas visual.</p>
+    </section>
 
-    <div class="collapse navbar-collapse justify-content-end" id="nav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skill</a></li>
-        <li class="nav-item"><a class="nav-link" href="tina.html">Tina</a></li>
-        <li class="nav-item"><a class="nav-link" href="mey.html">Mey</a></li>
-        <li class="nav-item"><a class="nav-link active" href="alda.html">Alda</a></li>
+    <section id="pengalaman">
+      <h2>Pengalaman</h2>
+      <div class="pengalaman-container">
+        <div class="pengalaman-item">
+          <img src="img/alda1.jpg" alt="Desain Canva">
+          <div>
+            <h3>Desain Canva</h3>
+            <ul>
+              <li>Membuat konten promosi media sosial</li>
+              <li>Mendesain poster kegiatan kampus</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pengalaman-item">
+          <img src="img/alda2.jpg" alt="Kegiatan Excel">
+          <div>
+            <h3>Pengolahan Data Excel</h3>
+            <ul>
+              <li>Mengolah data laporan keuangan sederhana</li>
+              <li>Membuat tabel dinamis dan grafik</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill">
+      <h2>Skill</h2>
+      <ul>
+        <li><strong>Canva</strong> — Mampu membuat desain visual kreatif untuk media sosial dan presentasi.</li>
+        <li><strong>Microsoft Excel</strong> — Terampil dalam mengelola data dan membuat laporan sederhana.</li>
+        <li><strong>Microsoft Word</strong> — Terbiasa membuat dokumen profesional dan rapi.</li>
       </ul>
-    </div>
-  </div>
-</nav>
+    </section>
+  </main>
 
-<!-- Hero -->
-<section id="home" class="hero text-center">
-  <div class="container" data-animate>
-    <img src="images/Aldaprofile.jpg" alt="Alda Ufriyanti" class="rounded-circle mb-3 profile-img">
-    <h1>Hallo, I'm Alda Ufriyanti 🌸</h1>
-    <div class="social-links">
-      <a href="https://www.instagram.com/username_kamu" target="_blank" class="btn btn-outline-light mt-3">Instagram</a>
-    </div>
-  </div>
-</section>
-
-<!-- Tentang Saya -->
-<section id="about" class="about text-center">
-  <div class="container" data-animate>
-    <h2>Tentang Saya</h2>
-    <p class="mt-3">Hallo! Saya merupakan Mahasiswi Program Studi Sistem Informasi Universitas Musamus Merauke angkatan 2023. Saya aktif di organisasi HIMASI (Himpunan Mahasiswa Sistem Informasi) dan senang belajar hal baru di bidang teknologi.</p>
-    <img src="images/mahasiswaAlda.jpg" alt="Tentang Alda" class="rounded mt-3 about-img">
-
-    <div class="education-box mt-5 p-4 mx-auto">
-      <h5>Riwayat Pendidikan</h5>
-      <p><b>SD:</b> MI NURUSH SHOBA ASIKI</p>
-      <p><b>SMP:</b> SMP NEGERI ASIKI</p>
-      <p><b>SMA:</b> SMA NEGERI ASIKI</p>
-    </div>
-  </div>
-</section>
-
-<!-- Pengalaman -->
-<section id="experience" class="experience text-center">
-  <div class="container" data-animate>
-    <h2>Pengalaman</h2>
-    <div class="exp-list mt-4">
-
-      <div class="exp-item">
-        <img src="images/cv.jpg" alt="CV Anugrah Mandiri">
-        <div class="exp-text">
-          <h4>Staff Administrasi — CV Anugrah Mandiri</h4>
-          <ul>
-            <li>Mengelola dokumen pinjaman dan data anggota koperasi.</li>
-            <li>Melayani pelanggan dengan komunikasi profesional.</li>
-            <li>Menyusun laporan bulanan menggunakan Excel dan Word.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <img src="images/omart.jpg" alt="Kasir Omart">
-        <div class="exp-text">
-          <h4>Kasir — Toko Omart</h4>
-          <ul>
-            <li>Melakukan transaksi dengan cepat dan akurat.</li>
-            <li>Mengelola stok barang ringan di area kasir.</li>
-            <li>Melatih kemampuan multitasking sambil menjalani perkuliahan.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <img src="images/organisasi.jpg" alt="HMJ HIMASI">
-        <div class="exp-text">
-          <h4>Anggota HMJ HIMASI</h4>
-          <ul>
-            <li>Aktif dalam kegiatan kemahasiswaan di bidang IT dan kepemimpinan.</li>
-            <li>Berpartisipasi dalam event kampus seperti seminar dan pelatihan.</li>
-            <li>Menambah pengalaman teamwork dan public speaking.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Skill -->
-<section id="skills" class="skills text-center">
-  <div class="container" data-animate>
-    <h2>Skill</h2>
-    <div class="skill-list mt-4">
-
-      <div class="skill-item">
-        <img src="images/canva.png" alt="Canva">
-        <h4>Canva</h4>
-        <p>Mampu membuat desain konten visual seperti poster, banner, dan presentasi dengan gaya menarik dan konsisten.</p>
-      </div>
-
-      <div class="skill-item">
-        <img src="images/excel-2016-Logo.png" alt="Excel">
-        <h4>Microsoft Excel</h4>
-        <p>Terampil dalam pengolahan data, membuat grafik, dan analisis sederhana menggunakan formula dasar.</p>
-      </div>
-
-      <div class="skill-item">
-        <img src="images/word.png" alt="Word">
-        <h4>Microsoft Word</h4>
-        <p>Mampu menyusun dokumen profesional, laporan, dan surat resmi dengan format rapi dan efisien.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Kontak -->
-<section class="contact text-center">
-  <div class="container" data-animate>
-    <h2>Kontak Saya</h2>
-    <p>Email: <b>aldaufriyanti@gmail.com</b></p>
-    <p>Telepon: 0813-0000-0001</p>
-    <div class="mt-4">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2375461072967!2d140.39284187473797!3d-8.493735487290458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x688d23e1e18f07df%3A0xf0b6a1e2de7b5a86!2sUniversitas%20Musamus!5e0!3m2!1sid!2sid!4v1730586022006!5m2!1sid!2sid"
-        allowfullscreen
-        loading="lazy"></iframe>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <div class="container" data-animate>
-    <p>&copy; 2025 Portofolio Alda Ufriyanti — Dibuat dengan 💜 & Bootstrap</p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+  <footer>
+    <p>© 2025 Alda Ulfriyanti</p>
+  </footer>
 </body>
 </html>
