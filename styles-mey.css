@@ -106,7 +106,7 @@ header {
   padding:60px 0;
   text-align:center;
 }
-.hero img{border:6px solid #e16767;border-radius:70%;width:150px;height:200px;object-fit:cover;}
+.hero img{border:6px solid #e16767;border-radius:70%;width:200px;height:300px;object-fit:cover;}
 .hero h1{color:var(--primary);font-size:40px;margin:10px 0;}
 .hero .lead{color:var(--muted);max-width:600px;margin:0 auto;}
 .cta{margin-top:20 px;}
