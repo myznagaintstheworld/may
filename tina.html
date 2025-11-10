@@ -7,7 +7,182 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fff9fb, #fefcff);
+      color: #444;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #ffeaf2, #e3f5ff);
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar-brand strong {
+      color: #ff80ab;
+      font-weight: 700;
+    }
+
+    .nav-link {
+      color: #555 !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #ff4081 !important;
+      text-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(180deg, #fff5f8, #eafaff);
+      padding: 110px 0 100px;
+    }
+
+    .hero h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.8rem;
+      background: linear-gradient(90deg, #ff7eb3, #ffb6c1, #ffcce7, #a0e7e5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    .hero .lead {
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      color: #ff6f91;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 8px;
+    }
+
+    .social-links a:hover {
+      color: #00bcd4;
+      text-decoration: underline;
+    }
+
+    .btn-profile {
+      background: linear-gradient(90deg, #a0e7e5, #ffb6c1);
+      border: none;
+      border-radius: 50px;
+      padding: 10px 25px;
+      font-weight: 600;
+      color: #333;
+      box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+      transition: 0.3s;
+    }
+
+    .btn-profile:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(90deg, #ffb6c1, #a0e7e5);
+    }
+
+    /* Section Titles */
+    section h2 {
+      font-family: 'Pacifico', cursive;
+      color: #ff6f91;
+      margin-bottom: 15px;
+    }
+
+    /* Sections */
+    .about, .experience, .skills, .contact {
+      padding: 80px 0;
+    }
+
+    .about { background: linear-gradient(to bottom, #fff6fa, #fff9ff); }
+    .experience { background: linear-gradient(to bottom, #e3faff, #f5fdff); }
+    .skills { background: linear-gradient(to bottom, #fff9f3, #fffaf7); }
+    .contact { background: linear-gradient(to bottom, #e0f7fa, #f0ffff); }
+
+    footer {
+      background: linear-gradient(90deg, #ffeaf2, #e3f5ff);
+      color: #555;
+      padding: 40px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Sidebar kanan */
+    .sidebar {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(180deg, #ffeaf2, #e3f5ff);
+      border-radius: 20px 0 0 20px;
+      box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      color: #ff6f91;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #00bcd4;
+      transform: translateX(-5px);
+    }
+
+    img.rounded, .rounded-circle {
+      border: 3px solid #ffd6e8;
+      box-shadow: 0 5px 15px rgba(255, 182, 193, 0.35);
+    }
+
+    iframe {
+      border: none;
+      border-radius: 12px;
+      width: 100%;
+      height: 320px;
+      box-shadow: 0 3px 10px rgba(255, 182, 193, 0.4);
+    }
+
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: all 0.6s ease;
+    }
+
+    [data-animate].visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Kalimat berjalan */
+    .marquee-container {
+      background: linear-gradient(90deg, #ffdde1, #ee9ca7);
+      color: white;
+      font-weight: 600;
+      padding: 10px 0;
+      font-size: 1.1rem;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      animation: marquee 12s linear infinite;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+  </style>
 </head>
 <body>
 
