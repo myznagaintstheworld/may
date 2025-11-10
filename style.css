@@ -29,3 +29,19 @@ footer{background:#5a3e2b; color:#fff; padding:30px 0}
 @media (max-width:576px){
   .hero{padding:30px 0}
 }
+/* Mengatur gambar agar memiliki rasio 2:1 */
+.img-portrait {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* Batasi lebar gambar agar tidak terlalu besar */
+  aspect-ratio: 2 / 1; /* Menjaga rasio 2:1 */
+  object-fit: cover; /* Memastikan gambar dipotong dengan tepat agar sesuai rasio */
+  margin: 10px 0; /* Memberikan jarak antar gambar */
+}
+
+/* Menyelaraskan gambar di bagian pengalaman dan skill */
+.experience img,
+.skills img {
+  display: inline-block;
+  margin: 0 auto; /* Gambar berada di tengah */
+}
