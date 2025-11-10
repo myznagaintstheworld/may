@@ -1,14 +1,14 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f8e8ff;
-  color: #5e4b7a;
+  background-color: #d3f6f4;
+  color: #7ea1e1;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
 header {
-  background-color: #d5b8ff;
+  background-color: #6be0ed;
   color: white;
   padding: 40px 20px;
   border-radius: 0 0 40px 40px;
@@ -48,23 +48,23 @@ header h1 {
   border-radius: 50%;
   object-fit: cover;
   margin-top: 10px;
-  border: 4px solid #d5b8ff;
+  border: 4px solid #58c6ea;
 }
 
 .card h2 {
   margin-top: 15px;
-  color: #6d4bb3;
+  color: #3abce8;
 }
 
 .card p {
   font-size: 0.95rem;
-  color: #6a5d7b;
+  color: #6eceeb;
   margin: 10px 0 20px;
 }
 
 .btn {
   display: inline-block;
-  background-color: #d5b8ff;
+  background-color: #5f86e4;
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -73,11 +73,11 @@ header h1 {
 }
 
 .btn:hover {
-  background-color: #b68cff;
+  background-color: #3faeea;
 }
 
 footer {
-  background-color: #d5b8ff;
+  background-color: #72dcee;
   color: white;
   padding: 20px;
   border-radius: 40px 40px 0 0;
