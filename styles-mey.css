@@ -17,32 +17,87 @@ body{
 }
 
 /* Navbar */
-header{
-  background:rgb(233, 183, 183);
-  box-shadow:0 6px 18px rgba(0,0,0,0.05);
-  position:sticky;
-  top:0;
-  z-index:40;
+header {
+  background: rgb(233, 183, 183);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  padding: 10px 24px;
 }
-.nav-row{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:10px 24px;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  font-weight:700;
-  color:var(--primary);
-  font-size:20px;
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 20px;
 }
-.brand img{width:40px;height:40px;border-radius:50%}
-.people{display:flex;align-items:center;gap:16px;font-weight:700;}
-.people a{text-decoration:none;color:#222;}
-.people a.active{color:#b35a4e;}
-.burger{display:none;font-size:26px;cursor:pointer;}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.people {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 700;
+}
+
+.people a {
+  text-decoration: none;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.people a.active {
+  color: #b35a4e;
+}
+
+.people a:hover {
+  color: #9a4dff; /* Tambahkan warna hover */
+}
+
+.burger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Responsif untuk layar kecil (mobile) */
+@media (max-width: 768px) {
+  .people {
+    display: none; /* Sembunyikan menu untuk layar kecil */
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(233, 183, 183);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+
+  .burger {
+    display: block; /* Tampilkan burger menu pada layar kecil */
+  }
+
+  .burger.active + .people {
+    display: flex; /* Tampilkan menu saat burger di klik */
+  }
+}
 
 /* Hero */
 .hero{
