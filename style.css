@@ -3,6 +3,7 @@
   --pink2: #ffdde1;
   --blue-soft: #e3f5ff;
   --text: #444;
+  --highlight: #ff6f91;
 }
 
 /* Umum */
@@ -19,7 +20,7 @@ body {
   backdrop-filter: blur(10px);
 }
 .navbar-brand strong {
-  color: #ff6f91;
+  color: var(--highlight);
 }
 .nav-link {
   color: #555 !important;
@@ -36,7 +37,7 @@ body {
 }
 .hero h1 {
   font-family: "Pacifico", cursive;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   background: linear-gradient(90deg, #ff7eb3, #ffb6c1, #ffcce7, #a0e7e5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -45,8 +46,6 @@ body {
   font-size: 1.1rem;
   color: #555;
 }
-
-/* Tombol */
 .btn-profile {
   background: linear-gradient(90deg, #a0e7e5, #ffb6c1);
   border: none;
@@ -57,28 +56,60 @@ body {
   box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
 }
 
-/* Bagian */
+/* Bagian umum */
 .about, .experience, .skills, .contact {
   padding: 80px 0;
 }
 
-/* Gambar dengan rasio 1:1 */
+/* Gambar pengalaman */
 .img-portrait {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(255, 182, 193, 0.35);
+  transition: transform 0.4s ease;
+}
+.img-portrait:hover {
+  transform: scale(1.05);
 }
 
 /* List pengalaman */
 ul li {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   margin-bottom: 8px;
 }
 ul li i {
-  color: #ff6f91;
+  color: var(--highlight);
   margin-right: 10px;
+}
+.intro {
+  color: #555;
+  font-style: italic;
+}
+
+/* Skill cards */
+.skill-card {
+  background: linear-gradient(180deg, #fff, #ffeaf6);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.25);
+  transition: all 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(255, 182, 193, 0.35);
+}
+.skill-card h5 {
+  color: var(--highlight);
+  font-weight: 700;
+}
+.skill-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.text-pink {
+  color: var(--highlight);
 }
 
 /* Footer */
@@ -89,7 +120,7 @@ footer {
   color: #555;
 }
 
-/* Sidebar kanan */
+/* Sidebar */
 .sidebar {
   position: fixed;
   right: 0;
@@ -103,9 +134,10 @@ footer {
 .sidebar a {
   display: block;
   margin: 10px 0;
-  color: #ff6f91;
+  color: var(--highlight);
   font-weight: 600;
   text-decoration: none;
+  transition: 0.3s;
 }
 .sidebar a:hover {
   color: #00bcd4;
@@ -123,7 +155,7 @@ footer {
   transform: translateY(0);
 }
 
-/* Pesan Berjalan Modern di bawah */
+/* Pesan Berjalan */
 .running-text {
   width: 100%;
   overflow: hidden;
