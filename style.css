@@ -55,6 +55,7 @@ body {
   font-weight: 600;
   box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
 }
+.btn-primary{background:pink;color:#141313;}
 
 /* Bagian umum */
 .about, .experience, .skills, .contact {
