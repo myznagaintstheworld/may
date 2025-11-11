@@ -9,7 +9,7 @@
 /* Umum */
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(to bottom, #fff9fb, #fefcff);
+  background: linear-gradient(to bottom, #dc8ca7, #fefcff);
   color: var(--text);
   scroll-behavior: smooth;
 }
