@@ -169,8 +169,8 @@ body {
 }
 
 footer {
-  background: linear-gradient(90deg, #f3e8ff, #e7dbff);
-  color: #0f0e0e;
+  background: rgb(216, 155, 216)
+  color:black;
   padding: 40px 0;
   text-align: center;
 }
